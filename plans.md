@@ -50,24 +50,6 @@ Tech Team- developers that create the successful product.
 
  
 
-Potential Job Roles: 
-
-Data Analyst 
-
-Backend Dev 
-
-Frontend Dev 
-
-Full stack 
-
-DevOps 
-
-QA Engineer 
-
-Tech Lead 
-
-CMS Dev 
-
  
 
 Accessibility in Microsoft Office & Webpages 
@@ -200,14 +182,5 @@ A colourful, high-contrast graphic layout, combined with pictures and text, crea
 
  
 
-Examples: 
-
-Canvas: https://www.lifeatcanva.com/en/ 
-
-Xero: https://www.xero.com/au/careers/  
-
-Slack: https://slack.com/intl/en-au/careers  
-
-Wix: https://careers.wix.com/positions 
 
  
