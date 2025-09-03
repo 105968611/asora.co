@@ -16,7 +16,7 @@
 | [Front-End Software Engineer](#-front-end-software-engineer)          | Development Department     | Full-Time  | Hybrid  | $      |
 | [Graduate (Software Developer) EOI](#-graduate-software-developer-eoi)|          --                | Part-Time  | On-site | $      |
 | [Data Architect](#-data-architect)                                    |                            |            |         |        |
-|                                                                       |                            |            |         |        |
+| [Database Administrator]                                              |                            |            |         |        |
 |                                                                       |                            |            |         |        |
 
 
