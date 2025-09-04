@@ -17,8 +17,8 @@
 | [Front-End Software Engineer](#-front-end-software-engineer)          | Development Department     | Full-Time  | Hybrid  | $      |
 | [Graduate (Software Developer) EOI](#-graduate-software-developer-eoi)|          --                | Part-Time  | On-site | $      |
 | [Data Architect](#-data-architect)                                    |                            |            |         |        |
-|                                                                       |                            |            |         |        |
-|                                                                       |                            |            |         |        |
+| [Database Administrator](#-database-administrator)                    | Data Governance Department | Full-Time  | On-site | $      |
+| [Systems and Network Administrator](#-systems-and-network-administrator)| Infrastructure Department | Full-Time | On-site | $      |
 
 
 ## 📝 Job Description and Technology Stack
@@ -145,3 +145,17 @@ Designs and manages the organization’s data architecture. Defines data models,
 - Metadata management
 - Data governance tools
 
+### 🟠 Database Administrator
+Designs, builds and maintains database solutions, ensuring data integrity and performance.
+**Technology/Skill Stack:**
+- Oracle,
+- MongoDB,
+- SQL server and
+- Sybase.
+
+### 🟠 Systems and Network Administrator
+Supports clients across multiple environments ensuring high performance systems.
+**Technology/Skill Stack:**
+- Google Cloud,
+- Amazon Web Services and
+- Azure
