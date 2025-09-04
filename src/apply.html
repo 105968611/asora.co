@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!--Basic Form apply.html-->
+    <div>
+        <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <fieldset>
+                <legend>Personal Detail</legend>
+                <p><label for="apl_name">Name</label></p>
+                <input type="text" id ="apl_name" name="apl_name" required pattern="[a-zA-Z\s]+" title="Name should be 7-10 characters long and contain only letters and spaces" placeholder="Enter your full name">
+                <p><label for="apl_lastname">Lastname</label></p>
+                <input type="text" id="apl_lastname" name="apl_lastname" required pattern="[a-zA-Z\s]+" title="Lastname should be 7-10 characters long and contain only letters and spaces" placeholder="Enter your lastname">
+                <p><label for="apl_pref">Preffered Name</label></p>
+                <input type="text" id="apl_pref" name="apl_pref" required pattern="[a-zA-Z\s]+" title="Preffered Name should be 7-10 characters long and contain only letters and spaces" placeholder="Enter your preffered name">
+                <p><label for="apl_email">Email</label></p>
+                <input type="email" id="apl_email" name="apl_email" required placeholder="Enter your email">
+                <p><label for="con_email">Confirm Email</label></p>
+                <input type="text" id="con_email" name="con_email" required placeholder="Confirm your email">
+                <p><label for="state">State</label></p>
+                <select name="state" id="state">
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <p><label for="work_title">Title</label></p>
+                <input type="text" id="work_title" name="work_title" required pattern="[a-zA-Z\s]+" placeholder="Enter your job title">
+                <p><label for="company">Company</label></p>
+                <input type="text" id="company" name="company" required pattern="[a-zA-Z\s]+" placeholder="Enter your company name">
+                <p><label for="job_description">Job Description</label></p>
+                <textarea id="job_description" name="job_description" rows="4" cols="50" placeholder="Describe your job role"></textarea>
+                <p><label for="_expfrom">From</label></p>
+                <input type="month" id="from" name="from" required>
+                <p><label for="to">To</label></p>
+                <input type="month" id="to" name="to" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <p><label for="insti">Institution</label></p>
+                <input type="text" id="insti" name="insti" required pattern="[a-zA-Z\s]+" placeholder="Enter your institution name">
+                <p><label for="major">Major</label></p>
+                <input type="text" id="major" name="major" required pattern="[a-zA-Z\s]+" placeholder="Enter your major">
+                <p><label for="Degree">Degree</label></p>
+                <input type="text" id="Degree" name="Degree" required pattern="[a-zA-Z\s]+" placeholder="Enter your degree">
+                <p><label for="uni_loca">School Location</label></p>
+                <input type="text" id="sh_loca" name="sh_loca" required pattern="[a-zA-Z\s]+" placeholder="Enter your school location">
+                <p><label for="uni_from"></label></p>
+                <input type="month" id="uni_from" name="uni_from" required>
+                <p><label for="uni_to">To</label></p>
+                <input type="month" id="uni_to" name="uni_to" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Attachments</legend>
+                <p><label for="cv">Attach your CV</label></p>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                <p><label for="portfolio">Link to your Portfolio</label></p>
+                <input type="url" id="portfolio" name="portfolio" placeholder="Enter your portfolio URL">
+            </fieldset>
+
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
