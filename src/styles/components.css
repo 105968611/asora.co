@@ -1,0 +1,58 @@
+/*
+
+filename: 
+
+author:
+
+contributors: 
+
+created: 09 September 2025
+
+last modified: --- 
+
+description: this file encapsulates component styles such as buttons, cards, forms, modals.
+
+*/
+
+.req {
+    color: red;
+}
+
+
+
+.navbar {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  background-color: #BBBB;
+  width: 100%;
+  height: 2rem;
+  
+}
+
+.navbar a{
+    padding: 0.5rem 2.5rem;
+    color: darkslategray;
+    display: inline-block;
+}
+
+/*FORM INPUT BOXES*/
+
+.form_box{
+    border: 1px solid #ccc ;
+    padding: 1em 16px;
+    border-radius: 16px;
+
+}
+
+.input_box{
+    padding: 8px;
+    display: block;
+    border: none;
+    width: 98%;
+    border-radius: 8px;
+}
+
+
