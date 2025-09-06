@@ -25,6 +25,31 @@
 ### 🟠 Data Engineer
 Designs, builds, and maintains data pipelines and ETL processes to collect, process, and store large datasets for analytics and reporting. Ensures data quality and reliability.
 
+**Experience required**
+1. Degrees
+Must have CS degree or Data science degree/major
+Accepts
+- software engineering
+- information technology
+- statistics when paired with coding tools
+- applied mathematics when paied with coding tools
+2. Coding tools
+- languages and tools
+sql(mandatory), python(mandatory), R(frequently used), git
+- Data platforms and databases
+PostgreSQL, MySQL, SQL Server
+Snowflake, BigQuery, Redshift[data warehousing]
+3. other useful traits
+- Alteryx, Talend, Airflow, dbt (ETL tools)
+- AWS (Glue, Redshift, S3), GCP (BigQuery, Data Studio), Azure (Data Factory, Synapse).
+
+**soft skills**
+Analytical thinking: Ability to interpret datasets into usable business insights.
+Communication: Explaining technical findings to non-technical teams (essential for policy/government).
+Problem-solving & critical thinking: Structuring complex issues into measurable outcomes.
+Stakeholder engagement: Especially in APS/government contexts.
+
+
 **Technology Stack:**
 - Python
 - SQL
