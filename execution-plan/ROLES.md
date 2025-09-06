@@ -18,7 +18,16 @@
 | [Graduate (Software Developer) EOI](#-graduate-software-developer-eoi)|          --                | Part-Time  | On-site | $      |
 | [Data Architect](#-data-architect)                                    |                            |            |         |        |
 | [Database Administrator](#-database-administrator)                    | Data Governance Department | Full-Time  | On-site | $      |
-| [Systems and Network Administrator](#-systems-and-network-administrator)| Infrastructure Department | Full-Time | On-site | $      |
+| [Systems and Network Administrator](#-systems-and-network-administrator)| Infrastructure Department | Full-Time | On-site | $90K - $110K |
+| [Management Accountant](#management-accountant)| Accounts Department | Full-Time | Hybrid | $90K - $110K |
+| [DevOps Engineer](#devops-engineer)| Infrastructure Department | Full-Time | Hybrid | $110K - 140K |
+| [UI/UX Designer Lead](#ui/ux-designer-lead)| Development Department | Full-Time | Hybrid | $100K - $120K |
+| [Cyber Security Operations Lead](#cybersecurity-operatuins-lead)| Cybersecurity Department | Full-Time | Hybrid | $80K - $100K |
+| [Security Consultant](#security-consultant)| Cybersecurity Department | Full-Time | Hybrid | $ONE DOLLAR |
+
+
+
+
 
 
 ## 📝 Job Description and Technology Stack
@@ -147,6 +156,7 @@ Designs and manages the organization’s data architecture. Defines data models,
 
 ### 🟠 Database Administrator
 Designs, builds and maintains database solutions, ensuring data integrity and performance.
+
 **Technology/Skill Stack:**
 - Oracle,
 - MongoDB,
@@ -155,7 +165,48 @@ Designs, builds and maintains database solutions, ensuring data integrity and pe
 
 ### 🟠 Systems and Network Administrator
 Supports clients across multiple environments ensuring high performance systems.
+
 **Technology/Skill Stack:**
 - Google Cloud,
 - Amazon Web Services and
 - Azure
+
+### 🟠 Senior Management Accountant
+Provide monthly management reports, forecasts, annual budgets and financial insight and analysis services.
+
+**Technology/Skill Stack:**
+- N/A
+
+### 🟠 DevOps Engineer
+Deliver digital solutions using modern technologies and infrastructure practices.
+
+**Technology/Skill Stack** 
+- CI/CD
+- MS DevOPs
+- Git 
+- AWS
+- MS Azure
+
+### 🟠 UI/UX Designer Lead
+Develop software application interfaces.
+
+**Technolgy/Skill Stack:**
+- XD, InVision
+- Adobe Photoshop, Illustrator, Indesign
+
+### 🟠 Cyber Security Operations Lead
+Involved in incident response, threat hunting, vulnerability triage and regulating security platforms
+
+**Technology/Skill Stack:**
+- SIEM
+- XDR
+
+### Cyber Security Consultant
+Examines the current security system and identifies ways to improve security measures
+
+**Technology/Skill Stack:**
+- TCP/IP
+- Python
+- C/C++
+
+

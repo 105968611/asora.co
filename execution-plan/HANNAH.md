@@ -4,21 +4,21 @@
 
 #### Tasks
 
-- [ ] Complete Brand Design
-	- [ ] About Company
-    - [ ] Logo
-    - [ ] Typography
-    - [ ] Colour Palette
-    - [ ] Possible Template Layouts; Team Profile
-    - [ ] Icons
+- [✅] Complete Brand Design
+	- [✅] About Company
+    - [✅] Logo
+    - [✅] Typography
+    - [✅] Colour Palette
+    - [✅] Possible Template Layouts; Team Profile
+    - [📝] Icons
 
-- [ ] Complete Wireframe
-    - [ ] Home Page `type="index.html"`
-    - [ ] Job Application `type="job.html"`
-    - [ ] Application Form `type="apply.html"`
-    - [ ] About Page `type="about.html"`
+- [✅] Complete Wireframe
+    - [✅] Home Page `type="index.html"`
+    - [✅] Job Application `type="job.html"`
+    - [✅] Application Form `type="apply.html"`
+    - [✅] About Page `type="about.html"`
 
-- [ ] Make Execution Plan/Roadmap
+- [✅] Make Execution Plan/Roadmap
 
 - [ ] Started Foundation "Coding" on all html files
 
