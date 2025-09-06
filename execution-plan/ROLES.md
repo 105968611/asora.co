@@ -25,6 +25,15 @@
 ### 🟠 Data Engineer
 Designs, builds, and maintains data pipelines and ETL processes to collect, process, and store large datasets for analytics and reporting. Ensures data quality and reliability.
 
+**Technology Stack:**
+- Python
+- SQL
+- Databricks
+- Azure Data Factory
+
+### 🟠 Data Analyst
+Interprets and analyzes datasets to provide actionable insights for decision-making. Develops dashboards, reports, and visualizations.
+
 **Experience required**
 1. Degrees
 Must have CS degree or Data science degree/major
@@ -48,17 +57,7 @@ Analytical thinking: Ability to interpret datasets into usable business insights
 Communication: Explaining technical findings to non-technical teams (essential for policy/government).
 Problem-solving & critical thinking: Structuring complex issues into measurable outcomes.
 Stakeholder engagement: Especially in APS/government contexts.
-
-
-**Technology Stack:**
-- Python
-- SQL
-- Databricks
-- Azure Data Factory
-
-### 🟠 Data Analyst
-Interprets and analyzes datasets to provide actionable insights for decision-making. Develops dashboards, reports, and visualizations.
-
+g
 **Technology Stack:**
 - SQL
 - Power BI
