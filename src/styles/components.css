@@ -18,6 +18,8 @@ description: this file encapsulates component styles such as buttons, cards, for
     color: red;
 }
 
+/*NAVBAR*/
+
 .navbar {
     border: 1px solid #eff4f8;
     background-color: #fff;
@@ -58,7 +60,6 @@ description: this file encapsulates component styles such as buttons, cards, for
     color: #3f4e61;
     border-radius: 6px;
 }
-
 
 
 /*FORM INPUT BOXES*/

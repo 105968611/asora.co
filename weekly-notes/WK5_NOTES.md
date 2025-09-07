@@ -54,9 +54,9 @@
 - Created foundational HTML form for apply.html
 
 **To-Do**
-- [ ] Keep working on Jira board—Deadline: Sunday.
-- [ ] Clean up documents and folder structure—Deadline: Sunday.
-- [ ] Start or/and improve HTML skeleton — Deadline: Thursday Week 6.
+- [x] Keep working on Jira board—Deadline: Sunday.
+- [x] Clean up documents and folder structure—Deadline: Sunday.
+- [x] Start or/and improve HTML skeleton — Deadline: Thursday Week 6.
 - [ ] Add more details to ROLES.md
 
 #### 🏆 Wins 
