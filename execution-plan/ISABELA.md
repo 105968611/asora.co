@@ -1,4 +1,4 @@
-#✍️ Isabela's Roadmap
+# ✍️ Isabela's Roadmap
 
 ## **Week 1 – Setup & Structure**
 
@@ -12,26 +12,26 @@
 
 | Field                | Details                                              | Added |
 | -------------------- | ---------------------------------------------------- | ----- |
-| Job reference number | Exactly 5 alphanumeric characters                    |       |
-| First name           | Max 20 alpha characters                              | 🟡    |
-| Last name            | Max 20 alpha characters                              | 🟡    |
-| Date of birth        | dd/mm/yyyy                                           |       |
-| Gender               | Radio buttons (fieldset + legend)                    |       |
-| Street Address       | Max 40 characters                                    |       |
-| Suburb/Town          | Max 40 characters                                    |       |
+| Job reference number | Exactly 5 alphanumeric characters                    | 🟢    |
+| First name           | Max 20 alpha characters                              | 🟢    |
+| Last name            | Max 20 alpha characters                              | 🟢    |
+| Date of birth        | dd/mm/yyyy                                           | 🟢    |
+| Gender               | Radio buttons (fieldset + legend)                    | 🟡    |
+| Street Address       | Max 40 characters                                    | 🟢    |
+| Suburb/Town          | Max 40 characters                                    | 🟢    |
 | State                | Dropdown: VIC, NSW, QLD, NT, WA, SA, TAS, ACT        | 🟢    |
-| Postcode             | Exactly 4 digits                                     |       |
-| Email                | Valid format                                         | 🟡    |
-| Phone number         | 8–12 digits                                          | 🟡    |
-| Skill list           | Checkbox inputs; last item must read “Other skills…” |       |
-| Other skills         | Textarea                                             |       |
+| Postcode             | Exactly 4 digits                                     | 🟢    |
+| Email                | Valid format                                         | 🟢    |
+| Phone number         | 8–12 digits                                          | 🟢    |
+| Skill list           | Checkbox inputs; last item must read “Other skills…” | 🟡    |
+| Other skills         | Textarea                                             | 🟡    |
 
 - **Day 4–5:**
-    - [ ] Create a simple navigation bar linking all pages following wireframes.
-    - [ ] Write placeholder headings for each section in both pages.
-    - [ ] Review wireframes. 
+    - [x] Create a simple navigation bar linking all pages following wireframes.
+    - [x] Write placeholder headings for each section in both pages.
+    - [x] Review wireframes. 
 - **Day 6–7:**
-    - Apply initial CSS reset and set up global styles.
+    - [x] Apply initial CSS reset and set up global styles.
 
 --- 
 ## **Week 2 – Build the Job Application Form**
