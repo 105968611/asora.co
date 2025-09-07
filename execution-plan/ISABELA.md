@@ -27,11 +27,11 @@
 | Other skills         | Textarea                                             | 🟡    |
 
 - **Day 4–5:**
-    - [ ] Create a simple navigation bar linking all pages following wireframes.
-    - [ ] Write placeholder headings for each section in both pages.
-    - [ ] Review wireframes. 
+    - [x] Create a simple navigation bar linking all pages following wireframes.
+    - [x] Write placeholder headings for each section in both pages.
+    - [x] Review wireframes. 
 - **Day 6–7:**
-    - Apply initial CSS reset and set up global styles.
+    - [x] Apply initial CSS reset and set up global styles.
 
 --- 
 ## **Week 2 – Build the Job Application Form**
