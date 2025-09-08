@@ -1,38 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asora.Co</title>
-     <!--Link to CSS-->
-    <link rel="stylesheet" href="./styles/index_comp.css">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Asora.Co</title>
+			<!--Link to CSS-->
+			<link rel="stylesheet" href="./styles/index-styles/index_comp.css">
 
-    <!--Required Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="page-1">
-        <!--Page 1 (Navigation)-->
-        <div>
-            <img class="logo" src="images/asora_logo_white.png" alt="Asora Logo">
-            <nav class="header-nav">
-                <a href="#index"> Home </a>
-                <a href="#jobs"> Careers </a>
-                <a href="#about"> Our Team</a>
-            </nav>
-        </div>
-        <div class="container">
-            <h1 class="slogan"> Technology that Serves </h1>
-        </div>
-    </header>
+			<!--Required Fonts-->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!--Page 2-->
-    <section>
-        <div>
-            <p> Asora is a new blah blah blah</p>
-        </div>
-    </section>
-</body>
+			<style>
+
+				body {
+					font-family: Montserrat, Arial, Helvetica, sans-serif;
+					margin: 0;
+				}
+
+				.page-1 {
+					position: relative;
+				}
+
+				.bg1-page1 {
+					width: 100%;	
+				}
+
+				.slogan-page1 {
+					font-size: 75px;
+					font-weight: 500;
+					color: white;
+					width: 800px;
+
+					position: absolute;
+					bottom: 185px;
+					left: 45px;
+				}
+
+				.page-2{
+					height: 220px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: black;
+					margin-top: -5px;
+				}
+
+				.description-page2 {
+					text-align: center;
+					font-size: 25px;	
+					margin: 0;
+					color: white;
+				}
+
+				.bg2-page3 {
+					width: 100%;
+					height: 100%;
+					position: relative;
+				}
+
+				.page-3{
+					height: 900px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					background-color: black;
+					margin-top: -5px;
+
+					background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), 
+					rgba(0, 0, 0, 1)),
+					url(images/background/bg2.png);
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.topic-page3 {
+					font-size: 65px;
+					width: 900px;
+					text-align: center;
+					color: white;
+					font-weight: 500;
+					margin-bottom: 50px;
+				}
+
+				.careers-button-p3 {
+					background-color: rgb(194, 181, 180);
+					border: none;
+					padding: 12px 24px;
+					border-radius: 30px;
+					font-weight: bold;
+					font-size: 18px;
+				}
+		
+			</style>
+	</head>
+	<body>
+			<nav>
+			</nav>
+
+			<div class="page-1">
+				<img class="bg1-page1" src="images/background/bg1.png" alt="bg1">
+				<div class="slogan-page1">
+					Technology that Serves
+				</div>
+			</div>
+
+			<div class="page-2">
+				<div class="description-page2">
+						[Description of Company & Insight]
+				</div>
+			</div>
+
+			<div class="page-3">
+				<div class="topic-page3">
+					Be a part of something bigger.
+				</div>
+				<button class="careers-button-p3">
+					Explore Careers
+				</button>
+			</div>
+	</body>
 </html>
