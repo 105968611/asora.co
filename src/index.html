@@ -17,6 +17,49 @@
 				body {
 					font-family: Montserrat, Arial, Helvetica, sans-serif;
 					margin: 0;
+					padding-top: 60px;
+				}
+
+				.nav-panel {
+					background-color: pink;
+					height: 75px;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					background-color: white;
+					border-bottom: solid;
+					border-width: 1px;
+					border-color: rgb(194, 181, 180);
+					top: 0;
+					left: 0;
+					right: 0;
+					position: fixed;
+					z-index: 100;
+
+					align-items: center;
+				}
+
+				.asora-logo{
+					height: 40px;
+					margin-left: 15px;
+				}
+
+				.right-section {
+					width: 500px;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+					margin-right: 45px;	
+					padding: 15px;
+
+					flex-shrink: 0;
+				}
+
+				.right-section a {
+					font-weight: 500;
+					text-decoration: none;
+					color: black;	
 				}
 
 				.page-1 {
@@ -39,7 +82,7 @@
 				}
 
 				.page-2{
-					height: 220px;
+					height: 300px;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -52,6 +95,7 @@
 					font-size: 25px;	
 					margin: 0;
 					color: white;
+					width: 1050px;
 				}
 
 				.bg2-page3 {
@@ -87,40 +131,267 @@
 				}
 
 				.careers-button-p3 {
-					background-color: rgb(194, 181, 180);
+					background-color: rgb(255, 255, 255);
 					border: none;
 					padding: 12px 24px;
 					border-radius: 30px;
 					font-weight: bold;
 					font-size: 18px;
+					transition: opacity 0.15s,
+					padding 0.15s;
+					cursor: pointer;
+
+					color: black;
+					text-decoration: none;
 				}
+
+				.careers-button-p3:hover {
+					opacity: 0.85;
+				}
+
+				.careers-button-p3:active {
+					opacity: 0.75;
+					padding: 11.5px 23.5px;
+				}
+
+				.page-4 {
+					width: 100%;
+					height: 650px;
+					display: flex;
+					margin: 0;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.media-page4{
+					display: inline-block;
+					width: 700px;
+					text-align: center;
+				}
+
+				.display-img-p4 {
+					width: 100%;
+				}
+
+				.page4-info {
+					width: 550px;
+					margin-left: 40px;
+					display: inline-block;
+					margin-bottom: 0;
+					margin-left: 35px;
+					text-align: center;
+				}
+
+				.title-page4 {
+					font-size: 30px;
+					font-weight: bold;
+					margin-bottom: 0;
+					margin-top: 0;
+				}
+
+				.descrip-p4 {
+					margin-top: 20px;
+					margin-bottom: 0;
+				}
+
+				.page-5 {
+					height: 700px;
+					background-color: white;
+				}
+
+				.title-page5 {
+					font-size: 30px;
+					font-weight: bold;
+					padding: 25px;
+					margin-bottom: 15px;
+
+					display: inline-block;
+				}
+
+				.box-info-section{
+					height: 450px;
+					width: 800px;
+					padding-left: 5%;
+					padding-right: 5%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.box-grid {
+					display: grid;
+					justify-content: center;
+					grid-template-columns: 1fr 1fr 1fr;
+					column-gap: 35px;
+					row-gap: 55px;
+				}
+
+				@media (max-width: 600px) {
+					.box-grid {
+						grid-template-columns: 1fr;
+					}
+				}
+
+				@media (min-width: 899px) and (max-width: 599px) {
+					.box-grid {
+						grid-template-columns: 1fr 1fr;
+					}
+				}
+
+				@media(min-width: 900px) {
+					.box-grid {
+						grid-template-columns: 1fr 1fr 1fr;
+					}
+				}
+
+				.box-preview {
+					height: 300px;
+					width: 300px;
+					margin: 0;
+					background-image: url(images/background/bg4.png);
+					background-size: cover;
+					border-radius: 15px;
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.box-info {
+					background-color: rgba(0, 0, 0, 0.3);
+					text-align: center;
+					bottom: 0;
+					top: 0;
+					
+				}
+
+				.box-info-title {
+					font-size: 24px;
+					font-weight: 600;
+					
+				}
+
+				.box-info-title,
+				.box-info-description {
+					margin: 0;
+					color: white;
+				}
+
+
 		
 			</style>
 	</head>
 	<body>
-			<nav>
-			</nav>
+		<!--Nav Bar-->
+			<nav class="nav-panel">
+				<div class="left-section">
+					<a href="index.html"><img class="asora-logo" src="images/logos/asora_logo_black.png" alt="Asora-Logo"></a>
+				</div>
 
+				<div class="right-section">
+					<a href="index.html"> Home </a>
+					<a href="jobs.html"> Careers </a>
+					<a href="about.html"> Our Team </a>
+				</div>
+			</nav>
+		<!--Page 1-->
 			<div class="page-1">
 				<img class="bg1-page1" src="images/background/bg1.png" alt="bg1">
 				<div class="slogan-page1">
 					Technology that Serves
 				</div>
 			</div>
-
+		<!--Page 2-->
 			<div class="page-2">
 				<div class="description-page2">
 						[Description of Company & Insight]
+						Lorem ipsum dolor sit amet consectetur elit. Dolor sit amet consectetur
+						adipscing elit quisuq faucibus
 				</div>
 			</div>
-
+		<!--Page 3-->
 			<div class="page-3">
 				<div class="topic-page3">
 					Be a part of something bigger.
 				</div>
-				<button class="careers-button-p3">
-					Explore Careers
-				</button>
+					<a class="careers-button-p3" href="jobs.html">	
+						Explore Careers
+					</a>	
 			</div>
+		<!--Page 4-->
+			<div class="page-4">
+				<div class="media-page4">
+					<img class="display-img-p4" src="images/background/bg3.png" alt="Filler-Image">
+				</div>
+				
+				<div class="page4-info">
+					<p class="title-page4">
+						Why Work with Asora?
+					</p>
+					<p class="descrip-p4">
+						Description as to why Asora is worth it.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+			<!--Page 5-->
+			<div class="page-5">
+				<div class="title-page5">Life at Asora</div>
+
+				<div class="box-info-section">
+						<div class="box-grid">
+							<div class="box-preview">
+								<div class="box-info">
+									<div class="heading-p5">
+										<p class="box-info-title">
+											Head 1
+										</p>
+									</div>
+
+									<div class="info-p5">
+										<p class="box-info-description">
+											BLAH BLAH blah blahahhdkad
+										</p>
+									</div>
+					
+								</div>
+							</div>
+
+						<div class="box-preview">
+							<div class="box-info">
+								<div class="heading-p5">
+									<p class="box-info-title">
+										Head 1
+									</p>
+								</div>
+
+								<div class="info-p5">
+									<p class="box-info-description">
+										BLAH BLAH blah blahahhdkad
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-preview">
+							<div class="box-info">
+								<div class="heading-p5">
+									<p class="box-info-title">
+										Head 1
+									</p>
+								</div>
+
+								<div class="info-p5">
+									<p class="box-info-description">
+										BLAH BLAH blah blahahhdkad
+									</p>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 	</body>
 </html>
