@@ -16,23 +16,54 @@
 </head>
 
 <body class="apply_body">
-
-    <header>
+    <img src="./assets/bg3.png" alt="" class="form_background"> 
+    <header class="header">
         <div class="navbar">
-        <a href="index.html" class="nav_logo"><img src="./media/asora logo 3.png" alt=""></a>
-        <div class="nav_links">
-            <a href="#">Home</a>
-            <a href="jobs.html">Careers</a>
-            <a href="#">Our Team</a>
+            <div>
+                <a href="index.html" class="nav_logo"><img src="./images/asora_logo_black.png" alt=""></a>
+            </div>
+            <div class="nav_links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Careers</a>
+                <a href="about.html">Our Team</a>
+            </div>
         </div>
-        </div> 
+
+        <div class="header_spacer">
+            <div class="pages_path">
+                <p> <a href="index.html">Home</a> > <a href="jobs.html">Careers</a> > <a href="apply.html">Apply</a> </p>
+            </div> 
+
+            <div style="display:flex; justify-content: center;">
+                <h1>Apply Now</h1>
+            </div>
+            <div style="display:flex; justify-content: center;">
+                <img src="./assets/down-arrow.png" style="height: 50px; padding-bottom: 1%;" alt="">
+            </div>
+        </div>
     </header>
 
+
+    <!--<div class="page_background"> 
+        <img src="./assets/bg2.png" alt="">
+    </div>-->
+
     <!--Basic Form apply.html-->
-    <div>
-        <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post" class="form_container">
-            <fieldset>
-                <legend>About you</legend>
+    <div class="form_wrapper">
+        <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post" >
+            <div class="form_container">
+                <p><legend>Role</legend></p>
+                <hr>
+                <div class="box_form">
+                    <select name="" id="" class="box_input" required>
+                        <option value="">Data Analyst</option>
+                        <option value="">Data Engiener</option>
+                    </select>                 
+                </div>
+                <br>
+            <!--<fieldset>-->
+                <p style=""><legend>About you</legend></p>
+                <hr>
 
                 <!--Fisrt name field-->
                 <div class="box_form">
@@ -116,27 +147,57 @@
                     <label for="phone" class="box_label">Phone number <span class="req">*</span></label>
                     <input type="number" class="box_input" pattern="\d{8-12}" placeholder="Enter your phone number">
                 </div>
+                <br>
 
 
                 <!--Skill list field-->
-                <p><label for="skills">Skill list</label></p>
+                <div class="box_form">
+                    <label for="gender" class="box_label">Skill list<span class="req">*</span></label>
+                    <fieldset class="vertical_radio">
+                        <label for="skill1"><input type="checkbox" name="skill" id="skill1" value="Data1">Data Quality Principles</label>
+                        <label for="skill2"><input type="checkbox" name="skill" id="skill2" value="Data2">Data privacy laws & compliance</label>
+                        <label for="skill3"><input type="checkbox" name="skill" id="skill3" value="Data3">Data privacy laws & compliance</label>
+                    </fieldset>
+                </div>
+                <br>
 
                 <!--Other skills field-->
-                <p><label for="other_skills">Other Skills</label></p>
-                <textarea id="other_skills" name="other_skills" rows="4" cols="50" placeholder="Describe your skills"></textarea>
+                <div class="box_form">
+                    <label for="other_skills" class="box_label">Other Skills</label>
+                    <textarea id="other_skills" name="other_skills" rows="4" class="box_input" placeholder="Describe your skills"></textarea>
+                </div>
 
-            </fieldset>
+                <hr>
 
-            <fieldset>
-                <legend>Attachments</legend>
-                <p><label for="cv">Attach your CV</label></p>
-                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-                <p><label for="portfolio">Link to your Portfolio</label></p>
-                <input type="url" id="portfolio" name="portfolio" placeholder="Enter your portfolio URL">
-            </fieldset>
+                <div class="box_form">
+                    <label for="cv" class="box_label">Attach your CV</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" class="box_attach">
+                </div>
+
+                <br>
+
+                <div class="box_form">
+                    <label for="portfolio" class="box_label">Link to your Portfolio</label>
+                    <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your portfolio URL">
+                </div>
+                <br>
+
+                <div class="box_form">
+                    <label for="portfolio" class="box_label">Link to your Linkedin</label>
+                    <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your Linkedin URL">
+                </div>
+                <br>
+
+                <div class ="buttons_form">
+                    <button type="reset" class="reset_btn">Reset Application</button>
+                    <button type="submit" class="submit_btn">Submit Application</button> 
+                </div>
+            </div>    
 
 
-            <fieldset>
+
+
+            <!--<fieldset>
                 <legend>Experience</legend>
                 <p><label for="work_title">Title</label></p>
                 <input type="text" id="work_title" name="work_title" required pattern="[a-zA-Z\s]+" placeholder="Enter your job title">
@@ -164,7 +225,7 @@
                 <input type="month" id="uni_from" name="uni_from" required>
                 <p><label for="uni_to">To</label></p>
                 <input type="month" id="uni_to" name="uni_to" required>
-            </fieldset>
+            </fieldset> -->
 
 
         </form>
