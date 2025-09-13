@@ -16,32 +16,82 @@
 </head>
 
 <body class="apply_body">
-    <img src="./assets/bg3.png" alt="" class="form_background"> 
+ 
+    <!--<img src="./assets/bg3.png" alt="" class="form_background">--> 
     <header class="header">
         <div class="navbar">
-            <div>
+            <div class="logo_container">
+                <img src="./assets/australian-government-stacked-black_168791ec-96ad-3bcc-817b-27e71beb4522.png" style="height: 50px;" alt="">
                 <a href="index.html" class="nav_logo"><img src="./images/asora_logo_black.png" alt=""></a>
             </div>
             <div class="nav_links">
                 <a href="index.html">Home</a>
                 <a href="jobs.html">Careers</a>
-                <a href="about.html">Our Team</a>
+                <div class="dropdown">
+                    <a href="about.html" class="dropdown_title">Our Team</a>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_heading">Meet the team</li>
+                        <hr style="width: 80%;">
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/code.png" alt="code"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Hannah</span>
+                                    <span class="role_member">Web Developer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/data-configuration.png" alt="data-configuration"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Isabela</span>
+                                    <span class="role_member">Data Engineer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/code.png" alt="code"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Nathan</span>
+                                    <span class="role_member">Web Developer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/combo-chart.png" alt="combo-chart"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Joseph</span>
+                                    <span class="role_member">Data Analyst</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="header_spacer">
-            <div class="pages_path">
-                <p> <a href="index.html">Home</a> > <a href="jobs.html">Careers</a> > <a href="apply.html">Apply</a> </p>
-            </div> 
-
-            <div style="display:flex; justify-content: center;">
-                <h1>Apply Now</h1>
-            </div>
-            <div style="display:flex; justify-content: center;">
-                <img src="./assets/down-arrow.png" style="height: 50px; padding-bottom: 1%;" alt="">
-            </div>
-        </div>
     </header>
+
+    
+    <div class="header_spacer">
+        <div class="pages_path">
+            <p> <a href="index.html">Home</a> > <a href="jobs.html">Careers</a> > <a href="apply.html">Apply</a> </p>
+        </div> 
+
+        <div class="page_title">
+            <h1 style="display: flex; align-items: flex-end; gap: 20px;">Apply Now <img src="./assets/down-arrow.png" style="height: 4vh;" alt=""></h1>
+        </div>
+    </div>
 
 
     <!--<div class="page_background"> 
@@ -169,6 +219,7 @@
 
                 <hr>
 
+                <!--Attachment section-->
                 <div class="box_form">
                     <label for="cv" class="box_label">Attach your CV</label>
                     <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" class="box_attach">
@@ -176,58 +227,33 @@
 
                 <br>
 
+                <!--Potfolio Section-->
                 <div class="box_form">
                     <label for="portfolio" class="box_label">Link to your Portfolio</label>
                     <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your portfolio URL">
                 </div>
                 <br>
 
+                <!--LinkedIn Section-->
                 <div class="box_form">
-                    <label for="portfolio" class="box_label">Link to your Linkedin</label>
+                    <label for="portfolio" class="box_label">Link to your LinkedIn</label>
                     <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your Linkedin URL">
                 </div>
                 <br>
 
+                <!--GitHub Section-->
+                <div class="box_form">
+                    <label for="portfolio" class="box_label">Link to your GitHub</label>
+                    <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your Linkedin URL">
+                </div>
+                <br>
+
+                <!--Form buttons RESET & SUBMIT-->
                 <div class ="buttons_form">
                     <button type="reset" class="reset_btn">Reset Application</button>
                     <button type="submit" class="submit_btn">Submit Application</button> 
                 </div>
             </div>    
-
-
-
-
-            <!--<fieldset>
-                <legend>Experience</legend>
-                <p><label for="work_title">Title</label></p>
-                <input type="text" id="work_title" name="work_title" required pattern="[a-zA-Z\s]+" placeholder="Enter your job title">
-                <p><label for="company">Company</label></p>
-                <input type="text" id="company" name="company" required pattern="[a-zA-Z\s]+" placeholder="Enter your company name">
-                <p><label for="job_description">Job Description</label></p>
-                <textarea id="job_description" name="job_description" rows="4" cols="50" placeholder="Describe your job role"></textarea>
-                <p><label for="_expfrom">From</label></p>
-                <input type="month" id="from" name="from" required>
-                <p><label for="to">To</label></p>
-                <input type="month" id="to" name="to" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Education</legend>
-                <p><label for="insti">Institution</label></p>
-                <input type="text" id="insti" name="insti" required pattern="[a-zA-Z\s]+" placeholder="Enter your institution name">
-                <p><label for="major">Major</label></p>
-                <input type="text" id="major" name="major" required pattern="[a-zA-Z\s]+" placeholder="Enter your major">
-                <p><label for="Degree">Degree</label></p>
-                <input type="text" id="Degree" name="Degree" required pattern="[a-zA-Z\s]+" placeholder="Enter your degree">
-                <p><label for="uni_loca">School Location</label></p>
-                <input type="text" id="sh_loca" name="sh_loca" required pattern="[a-zA-Z\s]+" placeholder="Enter your school location">
-                <p><label for="uni_from"></label></p>
-                <input type="month" id="uni_from" name="uni_from" required>
-                <p><label for="uni_to">To</label></p>
-                <input type="month" id="uni_to" name="uni_to" required>
-            </fieldset> -->
-
-
         </form>
     </div>
 

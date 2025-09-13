@@ -28,43 +28,41 @@ description: this file encapsulates component styles such as buttons, cards, for
     padding: 0;
 }
 
+body {background-color: #eaeaeb;}
+
 /*NAVBAR*/
 
 .navbar {
-    border: 1px solid #eff4f8;
-    background-color: #fff;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between; 
+    border: 1px solid #eff4f8;
+    background-color: #fff;  
     width: 100%;
     height: 70px;
     position: fixed;
     top: 0;
     box-shadow: 0 0 9px #ccdae766;
     z-index: 100;
+    gap: 20px;
 }
 
 .logo_container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 40px;
     padding: 7px;
-    border-radius: 10px;
-    background-color: #1d2628;
+    gap: 20px;
 }
 
 .nav_logo img {
     height: 30px;
-    margin-left: 70px;
-    padding-top: 5px;
 }
 
 .nav_links {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
-    margin-right: 70px; 
 }
 
 .nav_links a {
@@ -81,18 +79,27 @@ description: this file encapsulates component styles such as buttons, cards, for
     border-radius: 6px;
 }
 
+
 .header_spacer {
-    position: relative;/* Same height as the navbar */
+  width: 100%;
+  max-width: 42rem;   /* matches .form_container */
+  margin: 90px auto 20px auto;  /* centers horizontally, spacing from navbar */
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
-.pages_path{
-    position: absolute;
-    padding: 1%;
-    display: flex;
-    align-items: flex-start;
-    color: #383838; /* text-gray-500 */
-    font-size: 14px; 
-    z-index: 100;
+
+.pages_path {
+  margin: 0;
+  font-size: 14px;
+  color: #383838;
 }
+
+.page_title {
+  margin-top: 0.5rem;
+  font-size: 2vh;
+  color: #1d2628;
+}
+
 
 
 /*BACKGROUND IMAGE*/
@@ -122,7 +129,7 @@ description: this file encapsulates component styles such as buttons, cards, for
 
 .form_container{
     width: 100%;
-    max-width: 42rem; /* max-w-2xl */
+    max-width: 52rem;/* max-w-2xl */
     border-radius: 0.5rem; /* rounded-lg */
     background-color: white; 
     padding: 2.5rem; /* p-10 */
@@ -138,7 +145,7 @@ description: this file encapsulates component styles such as buttons, cards, for
     border-radius: 0.375rem; /* rounded-md */
     border: 1px solid #d1d5db; /* border-gray-300 */
     padding: 0.75rem; /* p-3 */
-    font-size: 0.875rem; /* text-sm */
+    font-size: 1rem; /* text-sm */
     color: #1f2937; /* text-gray-800 */
     box-sizing: border-box;
     transition: border-color 0.2s, box-shadow 0.2s;
@@ -147,7 +154,7 @@ description: this file encapsulates component styles such as buttons, cards, for
 .box_label{
     display: block;
     margin-bottom: 0.5rem; /* mb-2 */
-    font-size: 0.875rem; /* text-sm */
+    font-size: 1rem; /* text-sm */
     font-weight: 500; /* font-medium */
     color: #4b5563; /* text-gray-600 */
 }
@@ -155,7 +162,7 @@ description: this file encapsulates component styles such as buttons, cards, for
 /* Hide the ugly native file input */
 /* Style the wrapper */
 .box_attach {
-  font-size: 14px;
+  font-size: 1rem;
   border: none;              /* remove native border */
   cursor: pointer;
 }
@@ -168,7 +175,7 @@ description: this file encapsulates component styles such as buttons, cards, for
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -196,7 +203,7 @@ description: this file encapsulates component styles such as buttons, cards, for
     padding: 0.75rem 1.5rem; /* py-3 px-6 */
     border: none;
     border-radius: 0.375rem; /* rounded-md */
-    font-size: 0.875rem; /* text-sm */
+    font-size: 1rem; /* text-sm */
     font-weight: 600; /* font-semibold */
     cursor: pointer;
     transition: background-color 0.2s;
@@ -208,7 +215,7 @@ description: this file encapsulates component styles such as buttons, cards, for
     padding: 0.75rem 1.5rem; /* py-3 px-6 */
     border: none;
     border-radius: 0.375rem; /* rounded-md */
-    font-size: 0.875rem; /* text-sm */
+    font-size: 1rem; /* text-sm */
     font-weight: 600; /* font-semibold */
     cursor: pointer;
     transition: background-color 0.2s;
@@ -223,6 +230,111 @@ description: this file encapsulates component styles such as buttons, cards, for
 .vertical_radio label{
     display: block; /* Each label on a new line */
     margin-bottom: 5px;
+}
+
+
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+.dropdown_title {
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 0.5em 0;
+  min-height: 300px;
+  min-width: 250px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown_heading {
+    display: block;
+    padding: 22px 28px;
+    color: #1d2628;
+}
+
+.dropdown_menu li a {
+  display: grid;
+  padding: 22px 28px;
+  color: #1d2628;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.team_member {
+  display: grid;
+  grid-template-columns: auto auto auto;            
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #1d2628;
+}
+
+.member_icon {
+  grid-row-start: 1;
+  grid-row-end:3;
+}
+
+.member_info {
+  display:grid; 
+}
+
+.member_name {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.role_member {
+  grid-row-start: 2;
+  grid-row-end:3;
+  font-size: 12px;
+  color: #555;
+}
+
+.hover_icon {
+  opacity: 0;                 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 14px;
+  color: #1d2628;
+  transform: translateX(5px); 
+}
+
+.team_member:hover .hover_icon {
+  opacity: 1;                  
+  transform: translateX(0);    
+}
+
+.team_member:hover {
+  background-color: #eff4f8;
+  color: #3f4e61;
+  border-radius: 6px;
+}
+
+
+.dropdown_menu li a:hover {
+  background-color: #eff4f8;
+  color: #3f4e61;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown_menu {
+  opacity: 1;
+  transform: translateY(-2px);
+  pointer-events: auto;
 }
 
 
