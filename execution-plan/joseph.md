@@ -6,7 +6,7 @@
 - [X] Finish up with the 2 job roles
 
 ## Week 6 ##
-- [ ]Create both html pages jobs.html and index.hthml
+- [ ] Create both html pages jobs.html and index.hthml
 
 ## Mid-sem Break ##
 - [ ] start to wrap up the html
