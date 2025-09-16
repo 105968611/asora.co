@@ -13,8 +13,22 @@ last modified: 16/09/25
 description: css for about.html, could be merged(?)
 
 */
+h1 {
+    text-align: center;
+}
 .aboutSections {
-    padding-right: 15%;
+    padding-left: 10%;
+    width: 50%;
+    margin:auto;
+}
+.aboutSections div {
+    
+}
+.AboutLeftMembers {
+    float: left;
+}
+.AboutRightMembers {
+    float: right;
 }
 #studentids {
     float: right;
