@@ -4,17 +4,16 @@
 
 #### Tasks
 
-- [ ] Understand Github
-	- [ ] Including Github commands for branches in relation to the master. 
-- [ ] Add job roles
-	-  [ ] At least 2
+- [x] Understand Github
+	- [x] Including Github commands for branches in relation to the master. 
+- [x] Add job roles
+	-  [x] At least 2
 
 ## Week 6
 
 #### Tasks
  - [ ]  Work on the HTML
-	 - [ ] jobs.html
-	 - [ ] apply.html
+	 - [ ] about.html
 
 ## Mid Semester Break
 
