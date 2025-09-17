@@ -167,14 +167,21 @@
 }
 
 .box-p5 {
-  height: 300px;
-  width: 300px;
-  background-image: url(/src/images/background/bg4.png);
+  height: 400px;
+  width: 400px;
+  background-image: url(/src/images/background/bg4.png),
+   rgba(0, 0, 0, 1);
   background-size: cover;
   background-position: right;
+  cursor: pointer;
 
   border-radius: 15px;
   position: relative;
+  transition: 0.2s;
+}
+
+.box-p5:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .box-text {
