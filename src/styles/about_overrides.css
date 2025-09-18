@@ -15,23 +15,37 @@ description: css for about.html, could be merged(?)
 */
 h1 {
     text-align: center;
+    margin-top: 5rem;
 }
 .aboutSections {
-    padding-left: 10%;
-    width: 50%;
-    margin:auto;
+    /* padding-left: 10%; */
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
 }
-.aboutSections div {
-    
+#MembersBrief {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap: 1em;
+    column-gap: 5em;
+    padding-bottom: 5%;
 }
-.AboutLeftMembers {
+.AboutMembers {
+    border: 2px solid #000000;
+    border-radius: 14px;
+    padding: 3%;
+    padding-top: 0%;
+    background: #7f7f7f;
+}
+.AboutMembers img {
     float: left;
 }
-.AboutRightMembers {
-    float: right;
+.AboutMembers p {
+    clear: both;
 }
-#studentids {
+aside {
     float: right;
+    clear: none;
 }
 #FunFacts {
     width: max-content;
