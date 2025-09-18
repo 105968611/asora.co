@@ -3,82 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apply</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Required Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-<body>
 
+<body class="apply_body">
+ 
+    <!--<img src="./assets/bg3.png" alt="" class="form_background">--> 
+    <header class="header">
+        <div class="navbar">
+            <div class="logo_container">
+                <img src="./assets/australian-government-stacked-black_168791ec-96ad-3bcc-817b-27e71beb4522.png" style="height: 50px;" alt="">
+                <a href="index.html" class="nav_logo"><img src="./images/asora_logo_black.png" alt=""></a>
+            </div>
+            <div class="nav_links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Careers</a>
+                <div class="dropdown">
+                    <a href="about.html" class="dropdown_title">Our Team</a>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_heading">Meet the team</li>
+                        <hr style="width: 80%;">
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/code.png" alt="code"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Hannah</span>
+                                    <span class="role_member">Web Developer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
 
-    <!--Basic Form apply.html-->
-    <div>
-        <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
-            <fieldset>
-                <legend>Personal Detail</legend>
-                <p><label for="apl_name">Name</label></p>
-                <input type="text" id ="apl_name" name="apl_name" required pattern="[a-zA-Z\s]+" title="Name should be 7-10 characters long and contain only letters and spaces" placeholder="Enter your full name">
-                <p><label for="apl_lastname">Lastname</label></p>
-                <input type="text" id="apl_lastname" name="apl_lastname" required pattern="[a-zA-Z\s]+" title="Lastname should be 7-10 characters long and contain only letters and spaces" placeholder="Enter your lastname">
-                <p><label for="apl_pref">Preffered Name</label></p>
-                <input type="text" id="apl_pref" name="apl_pref" required pattern="[a-zA-Z\s]+" title="Preffered Name should be 7-10 characters long and contain only letters and spaces" placeholder="Enter your preffered name">
-                <p><label for="apl_email">Email</label></p>
-                <input type="email" id="apl_email" name="apl_email" required placeholder="Enter your email">
-                <p><label for="con_email">Confirm Email</label></p>
-                <input type="text" id="con_email" name="con_email" required placeholder="Confirm your email">
-                <p><label for="state">State</label></p>
-                <select name="state" id="state">
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-            </fieldset>
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/data-configuration.png" alt="data-configuration"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Isabela</span>
+                                    <span class="role_member">Data Engineer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
 
-            <fieldset>
-                <legend>Experience</legend>
-                <p><label for="work_title">Title</label></p>
-                <input type="text" id="work_title" name="work_title" required pattern="[a-zA-Z\s]+" placeholder="Enter your job title">
-                <p><label for="company">Company</label></p>
-                <input type="text" id="company" name="company" required pattern="[a-zA-Z\s]+" placeholder="Enter your company name">
-                <p><label for="job_description">Job Description</label></p>
-                <textarea id="job_description" name="job_description" rows="4" cols="50" placeholder="Describe your job role"></textarea>
-                <p><label for="_expfrom">From</label></p>
-                <input type="month" id="from" name="from" required>
-                <p><label for="to">To</label></p>
-                <input type="month" id="to" name="to" required>
-            </fieldset>
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/code.png" alt="code"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Nathan</span>
+                                    <span class="role_member">Web Developer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/combo-chart.png" alt="combo-chart"/>
+                                <div class="member_info">
+                                    <span class="member_name">Meet Joseph</span>
+                                    <span class="role_member">Data Analyst</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-            <fieldset>
-                <legend>Education</legend>
-                <p><label for="insti">Institution</label></p>
-                <input type="text" id="insti" name="insti" required pattern="[a-zA-Z\s]+" placeholder="Enter your institution name">
-                <p><label for="major">Major</label></p>
-                <input type="text" id="major" name="major" required pattern="[a-zA-Z\s]+" placeholder="Enter your major">
-                <p><label for="Degree">Degree</label></p>
-                <input type="text" id="Degree" name="Degree" required pattern="[a-zA-Z\s]+" placeholder="Enter your degree">
-                <p><label for="uni_loca">School Location</label></p>
-                <input type="text" id="sh_loca" name="sh_loca" required pattern="[a-zA-Z\s]+" placeholder="Enter your school location">
-                <p><label for="uni_from"></label></p>
-                <input type="month" id="uni_from" name="uni_from" required>
-                <p><label for="uni_to">To</label></p>
-                <input type="month" id="uni_to" name="uni_to" required>
-            </fieldset>
+    </header>
 
-            <fieldset>
-                <legend>Attachments</legend>
-                <p><label for="cv">Attach your CV</label></p>
-                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-                <p><label for="portfolio">Link to your Portfolio</label></p>
-                <input type="url" id="portfolio" name="portfolio" placeholder="Enter your portfolio URL">
-            </fieldset>
+    
+    <div class="header_spacer">
+        <div class="pages_path">
+            <p> <a href="index.html">Home</a> > <a href="jobs.html">Careers</a> > <a href="apply.html">Apply</a> </p>
+        </div> 
 
-        </form>
+        <div class="page_title">
+            <h1 style="display: flex; align-items: flex-end; gap: 20px;">Apply Now <img src="./assets/down-arrow.png" style="height: 4vh;" alt=""></h1>
+        </div>
     </div>
 
 
+    <!--<div class="page_background"> 
+        <img src="./assets/bg2.png" alt="">
+    </div>-->
 
+    <!--Basic Form apply.html-->
+    <div class="form_wrapper">
+        <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post" >
+            <div class="form_container">
+                <p><legend>Role</legend></p>
+                <hr>
+                <div class="box_form">
+                    <select name="" id="" class="box_input" required>
+                        <option value="">Data Analyst</option>
+                        <option value="">Data Engiener</option>
+                    </select>                 
+                </div>
+                <br>
+            <!--<fieldset>-->
+                <p style=""><legend>About you</legend></p>
+                <hr>
+
+                <!--Fisrt name field-->
+                <div class="box_form">
+                    <label for="fisrt_name" class="box_label">First name <span class="req">*</span></label>
+                    <input type="text" id ="apl_name" class="box_input" name="apl_name" required maxlength="20" pattern="[a-zA-Z\s]+" title="Name should be max 20 alpha characters long and contain only letters and spaces" placeholder="Enter your full name">
+                </div>
+                <br>
+                
+                <!--Last name field-->
+                <div class="box_form">
+                    <label for="last_name" class="box_label">Last name <span class="req">*</span></label>
+                    <input type="text" id="apl_lastname" class="box_input" name="last_name" required maxlength="20" pattern="[a-zA-Z\s]+" title="Lastname should max 20 alpha characters long and contain only letters and spaces" placeholder="Enter your lastname">
+                </div>
+                <br>
+
+                <!--Date of birth field-->
+                <div class="box_form">
+                    <label for="date_birth" class="box_label">Date of Birth <span class="req">*</span></label>
+                    <input type="text" name="date_birth" class="box_input" id="date_birth" required pattern="[0-3][0-9]/[0-1][0-9]/[0-9]{4}" placeholder="dd/mm/yyyy">
+                </div>
+                <br>
+
+                <!--Gender field-->
+                <div class="box_form">
+                    <label for="gender" class="box_label">Gender <span class="req">*</span></label>
+                    <div class="box_input">
+                        <input type="radio" name="gender" id="female" value="Female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="unit2" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                </div>
+                <br>
+
+                <!--Street address field-->
+                <div class="box_form">
+                    <label for="street_address" class="box_label">Street Address <span class="req">*</span> </label>
+                    <input type="text" class="box_input" maxlength="40" placeholder="Enter your street address">
+                </div>
+                <br>
+
+                <!--Suburb Town-->
+                <div class="box_form">
+                    <label for="suburb" class="box_label">Suburb/Town <span class="req">*</span></label>
+                    <input type="text" class="box_input" maxlength="40" placeholder="Enter your suburb name">
+                </div>
+                <br>
+
+                <!--State field-->
+                <div class="box_form">
+                    <label for="state" class="box_label">State <span class="req">*</span></label>
+                    <select name="state" id="state" class="box_input" required>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </div>
+                <br>
+
+                <!--Postcode field-->
+                <div class="box_form">
+                    <label for="postcode" class="box_label">Postcode <span class="req">*</span></label>
+                    <input type="number" class="box_input" pattern="\d{4}" placeholder="Enter your postcode">
+                </div>
+                <br>
+
+                <!--Email field-->
+                <div class="box_form">
+                    <label for="email" class="box_label">Email <span class="req">*</span></label>
+                    <input type="email" class="box_input" id="apl_email" name="apl_email" required placeholder="Enter your email">
+                </div>
+                <br>
+
+                <!--Phone number field-->
+                <div class="box_form">
+                    <label for="phone" class="box_label">Phone number <span class="req">*</span></label>
+                    <input type="number" class="box_input" pattern="\d{8-12}" placeholder="Enter your phone number">
+                </div>
+                <br>
+
+
+                <!--Skill list field-->
+                <div class="box_form">
+                    <label for="gender" class="box_label">Skill list<span class="req">*</span></label>
+                    <fieldset class="vertical_radio">
+                        <label for="skill1"><input type="checkbox" name="skill" id="skill1" value="Data1">Data Quality Principles</label>
+                        <label for="skill2"><input type="checkbox" name="skill" id="skill2" value="Data2">Data privacy laws & compliance</label>
+                        <label for="skill3"><input type="checkbox" name="skill" id="skill3" value="Data3">Data privacy laws & compliance</label>
+                    </fieldset>
+                </div>
+                <br>
+
+                <!--Other skills field-->
+                <div class="box_form">
+                    <label for="other_skills" class="box_label">Other Skills</label>
+                    <textarea id="other_skills" name="other_skills" rows="4" class="box_input" placeholder="Describe your skills"></textarea>
+                </div>
+
+                <hr>
+
+                <!--Attachment section-->
+                <div class="box_form">
+                    <label for="cv" class="box_label">Attach your CV</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" class="box_attach">
+                </div>
+
+                <br>
+
+                <!--Potfolio Section-->
+                <div class="box_form">
+                    <label for="portfolio" class="box_label">Link to your Portfolio</label>
+                    <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your portfolio URL">
+                </div>
+                <br>
+
+                <!--LinkedIn Section-->
+                <div class="box_form">
+                    <label for="portfolio" class="box_label">Link to your LinkedIn</label>
+                    <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your Linkedin URL">
+                </div>
+                <br>
+
+                <!--GitHub Section-->
+                <div class="box_form">
+                    <label for="portfolio" class="box_label">Link to your GitHub</label>
+                    <input type="url" id="portfolio" name="portfolio" class="box_input" placeholder="Enter your Linkedin URL">
+                </div>
+                <br>
+
+                <!--Form buttons RESET & SUBMIT-->
+                <div class ="buttons_form">
+                    <button type="reset" class="reset_btn">Reset Application</button>
+                    <button type="submit" class="submit_btn">Submit Application</button> 
+                </div>
+            </div>    
+        </form>
+    </div>
 
 </body>
 </html>

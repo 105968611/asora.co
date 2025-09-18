@@ -1,0 +1,46 @@
+/*
+
+filename: about_overrides.css
+
+author: Nathan V.
+
+contributors: Nathan
+
+created: 16 September 2025
+
+last modified: 16/09/25
+
+description: css for about.html, could be merged(?)
+
+*/
+h1 {
+    text-align: center;
+}
+.aboutSections {
+    padding-left: 10%;
+    width: 50%;
+    margin:auto;
+}
+.aboutSections div {
+    
+}
+.AboutLeftMembers {
+    float: left;
+}
+.AboutRightMembers {
+    float: right;
+}
+#studentids {
+    float: right;
+}
+#FunFacts {
+    width: max-content;
+    background-color: #c3c3c3;
+}
+#FunFacts tr:hover {
+    background-color: #ffffff;
+}
+#FunFacts th:hover {
+    color: #ffffff;
+    background-color: #494949;
+}
