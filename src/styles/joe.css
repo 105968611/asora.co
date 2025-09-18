@@ -1,0 +1,32 @@
+article {
+  border: 2px solid #ddd;      /* thin grey border */
+  border-radius: 10px;         /* rounded corners */
+  padding: 1.5rem;             /* space inside the box */
+  margin: 1.5rem 0;            /* space between boxes */
+  background-color: #fff;      /* white background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover/focus state for interactivity */
+article:hover,
+article:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.job-grid {display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 2rem;                             /* space between boxes */
+  padding: 2rem;
+}
+
+/* Ensuring all job cards look consistent */
+
+.job-grid article {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
