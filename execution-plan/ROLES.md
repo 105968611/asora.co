@@ -5,13 +5,13 @@
 | Job/Role                                                              | Department                 | Time       | Site    | Salary | 
 | --------------------------------------------------------------------- | -------------------------- | ---------- | ------- | ------ |
 | [Data Engineer](#-data-engineer)                                      | Data Governance Department | Full-Time  | Hybrid  | $      |
-| [Data Analyst](#-data-analyst)                                        | Data Governance Department | Full-Time  | Hybrid  | $      |
+| [Data Analyst](#-data-analyst)                                        | Data Governance Department | Full-Time  | Hybrid  |$120-140k|
 | [Business Analyst](#-business-analyst)                                | Data Governance Department | Full-Time  | Hybrid  | $      |
 | [Full-Stack Software Engineer](#-full-stack-software-engineer)        | Development Department     | Full-Time  | Hybrid  | $      |
 | [Solutions Architect](#-solutions-architect)                          | Infrastructure Department  | Part-Time  | Hybrid  | $      |
 | [Cloud & Infrastructure Manager](#-cloud--infrastructure-manager)     | Infrastructure Department  | Full-Time  | On-site | $      |
 | [Data Security Engineer](#-data-security-engineer)                    | Cybersecurity Department   | Full-Time  | Hybrid  | $      |
-| [Machine Learning Engineer](#-machine-learning-engineer)              | Development Department     | Part-Time  | Hybrid  | $      |
+| [Machine Learning Engineer](#-machine-learning-engineer)              | Development Department     | Part-Time  | Hybrid  |$120-150k|
 | [Systems Architect](#-systems-architect)                              | Development Department     | Full-Time  | Hybrid  | $      |
 | [Data Privacy Officer](#-data-privacy-officer)                        | Cybersecurity Department   | Full-Time  | On-site | $      |
 | [Front-End Software Engineer](#-front-end-software-engineer)          | Development Department     | Full-Time  | Hybrid  | $      |
@@ -44,6 +44,30 @@ Designs, builds, and maintains data pipelines and ETL processes to collect, proc
 ### 🟠 Data Analyst
 Interprets and analyzes datasets to provide actionable insights for decision-making. Develops dashboards, reports, and visualizations.
 
+**Experience required**
+1. Degrees
+Must have CS degree or Data science degree/major
+Accepts
+- software engineering
+- information technology
+- statistics when paired with coding tools
+- applied mathematics when paied with coding tools
+2. Coding tools
+- languages and tools
+sql(mandatory), python(mandatory), R(frequently used), git
+- Data platforms and databases
+PostgreSQL, MySQL, SQL Server
+Snowflake, BigQuery, Redshift[data warehousing]
+3. other useful traits
+- Alteryx, Talend, Airflow, dbt (ETL tools)
+- AWS (Glue, Redshift, S3), GCP (BigQuery, Data Studio), Azure (Data Factory, Synapse).
+
+**soft skills**
+Analytical thinking: Ability to interpret datasets into usable business insights.
+Communication: Explaining technical findings to non-technical teams (essential for policy/government).
+Problem-solving & critical thinking: Structuring complex issues into measurable outcomes.
+Stakeholder engagement: Especially in APS/government contexts.
+g
 **Technology Stack:**
 - SQL
 - Power BI
@@ -98,6 +122,34 @@ Protects data assets by implementing encryption, access control, and monitoring 
 
 ### 🟠 Machine Learning Engineer
 Builds, deploys, and maintains ML models for predictive analytics and AI-driven solutions. Works closely with data scientists and engineers.
+
+**Experience**
+1. Must have a bachelor degree in one or more
+- Computer Science
+- software engineering
+- Artificial Intelligence / Data Science
+- Electrical or Mechatronics Engineering (with ML specialization)
+- Applied Mathematics / Statistics (only valid if paired with an ML-focused Master’s/PhD).
+
+2. Programming Languages
+
+- Python (mandatory), R (uncommon), C++ or Java, SQL, Machine Learning & AI Tools
+- TensorFlow, PyTorch, Keras (deep learning frameworks)
+- scikit-learn, XGBoost, LightGBM 
+- Hugging Face Transformers 
+- OpenCV 
+- MLOps & Deployment
+- Docker, Kubernetes
+- CI/CD pipelines → GitHub Actions, Jenkins.
+- Cloud ML services: AWS SageMaker, GCP Vertex AI, Azure ML.
+- Mathematics & Algorithms, Linear algebra, probability, statistics.
+- Deep learning architectures (CNNs, RNNs, Transformers).
+
+**soft skills**
+- Problem-solving → Turning business/government needs into ML solutions.
+- System design thinking → Building scalable ML pipelines.
+- Collaboration → Work closely with Data Engineers, Analysts, and DevOps.
+- Communication → Explaining ML models to non-technical APS/government staff.
 
 **Technology Stack:**
 - Python
