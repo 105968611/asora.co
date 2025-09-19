@@ -15,459 +15,1098 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--LOGO LEADS TO INDEX-->
-  <header>
-    <a href="https://example.com">
-        <img src="cat.jpg" alt="Cute cat" width="300">
-    </a>
-  </header>
+  <!--NAVIGATION BAR-->
+  <header class="header">
+    <div class="navbar">
+        <div class="logo_container">
+            <img src="./assets/australian-government-stacked-black_168791ec-96ad-3bcc-817b-27e71beb4522.png" style="height: 50px;" alt="">
+            <a href="index.html" class="nav_logo">
+                <img src="./images/asora_logo_black.png" alt="">
+            </a>
+        </div>
+        <div class="nav_links">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Careers</a>
+            <div class="dropdown">
+                <a href="about.html" class="dropdown_title">Our Team</a>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_heading">Meet the team</li>
+                    <hr style="width: 80%;">
+                    <li>
+                        <a href="about.html" class="team_member">
+                            <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/code.png" alt="code"/>
+                            <div class="member_info">
+                                <span class="member_name">Meet Hannah</span>
+                                <span class="role_member">Web Developer</span>
+                            </div>
+                            <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                        </a>
+                    </li>
 
-<!--JOB SEARCH ASSORTING BAR-->
-    <div></div>
-      <form action="jobs.html" method="get">
-      <label for="sorter">Sort by:</label>
-      <select id="sorter" name="sort">
-      <option value="latest">Latest</option>
-      <option value="salary_high">Salary: High → Low</option>
-      <option value="salary_low">Salary: Low → High</option>
-      <option value="location">Location</option>
-      </select>
-      <button type="submit">Apply</button>
-      </form>
+                    <li>
+                        <a href="about.html" class="team_member">
+                            <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/data-configuration.png" alt="data-configuration"/>
+                            <div class="member_info">
+                                <span class="member_name">Meet Isabela</span>
+                                <span class="role_member">Data Engineer</span>
+                            </div>
+                            <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="team_member">
+                            <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/code.png" alt="code"/>
+                            <div class="member_info">
+                                <span class="member_name">Meet Nathan</span>
+                                <span class="role_member">Web Developer</span>
+                            </div>
+                            <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="about.html" class="team_member">
+                            <img class="member_icon" width="32" height="32" src="https://img.icons8.com/windows/32/combo-chart.png" alt="combo-chart"/>
+                            <div class="member_info">
+                                <span class="member_name">Meet Joseph</span>
+                                <span class="role_member">Data Analyst</span>
+                            </div>
+                            <span class="hover_icon"><img width="16" height="16" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-<!--LITERAL JOBS-->
-  
-<section class="job-grid">
-  
-  <section>
-    <!--JOB 1-->
-    <a href="page2.html" style="text-decoration:none; color:inherit;">
-      <article>
-    
-        <header>
-          <h2>Data Analyst</h2>
-          <p><strong>Reference number:</strong>DA1A2</p>
-          <p>Turns raw data into clear insights and dashboards to guide government policy and service delivery</p>
-        </header>
+</header>
+
+  <div class="layout"> 
+    <!--Special aside tag for navigating through jobs-->
+    <aside id="cooler-nav">
+      <h2>Jump to Job</h2>
+      <nav>
+        <a href="#DataEngineer">Data Engineer</a><br>
+        <a href="#DataAnalyst">Data Analyst</a><br>
+        <a href="#BusinessAnalyst">Business Analyst</a><br>
+        <a href="#FullStackSoftwareEngineer">Full-Stack Software Engineer</a><br>
+        <a href="#SolutionsArchitect">Solutions Architect</a><br>
+        <a href="#CloudInfrastructureManager">Cloud & Infrastructure Manager</a><br>
+        <a href="#DataSecurityEngineer">Data Security Engineer</a><br>
+        <a href="#MachineLearningEngineer">Machine Learning Engineer</a><br>
+        <a href="#SystemsArchitect">Systems Architect</a><br>
+        <a href="#DataPrivacyOfficer">Data Privacy Officer</a><br>
+        <a href="#FrontEndSoftwareEngineer">Front-End Software Engineer</a><br>
+        <a href="#GraduateSoftwareDeveloperEOI">Graduate (Software Developer) EOI</a><br>
+        <a href="#DataArchitect">Data Architect</a><br>
+        <a href="#DatabaseAdministrator">Database Administrator</a><br>
+        <a href="#SystemsAndNetworkAdministrator">Systems and Network Administrator</a><br>
+        <a href="#ManagementAccountant">Management Accountant</a><br>
+        <a href="#DevOpsEngineer">DevOps Engineer</a><br>
+        <a href="#UIUXDesignerLead">UI/UX Designer Lead</a><br>
+        <a href="#CyberSecurityOperationsLead">Cyber Security Operations Lead</a><br>
+        <a href="#SecurityConsultant">Security Consultant</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <main> <!--Main body starts here(includes banner)-->
+      <section class="job-grid">
         
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Sydney</p>
-          <p>Full-time</p>
-          <p>Salary: $120,000 - $140,000</p>
-          <p>Reports to Analytics Lead, Digital Services Branch</p>
-        </div>
+        <!--Company logo and slogo here-->
+        <section class="hero-banner">
+          <div class="hero-content">
+            <img src="images/asoratext_white.png" alt="Company Logo" class="logo">
+            <h1>Careers with Puspose. Impact through Government.</h1>
+          </div>
+        </section>
         
-        <div>
-        <h3>Key Responsibilities</h3>
-        <ol>
-          <li>Clean, model, and visualise datasets to answer policy questions.</li>
-          <li>Build automated dashboards and reproducible analytics pipelines.</li>
-          <li>Partner with product, security, and operations on data needs.</li>
-          <li>Communicate findings to non-technical stakeholders.</li>
-        </ol>
-        </div>
+        <!--Job listings-->
+        <section>
+          <!--JOB 1-->
+          <a href="apply.html">
+            <article>
+          
+              <header>
+                <h2>Data Analyst</h2>
+                <p><strong>Reference number:</strong>DA1A2</p>
+                <p>Turns raw data into clear insights and dashboards to guide government policy and service delivery</p>
+              </header>
+              
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Sydney(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $120,000 - $140,000</p>
+                <p>Reports to Analytics Lead, Digital Services Branch</p>
+              </div>
+              
+              <div>
+              <h3>Key Responsibilities</h3>
+              <ol>
+                <li>Clean, model, and visualise datasets to answer policy questions.</li>
+                <li>Build automated dashboards and reproducible analytics pipelines.</li>
+                <li>Partner with product, security, and operations on data needs.</li>
+                <li>Communicate findings to non-technical stakeholders.</li>
+              </ol>
+              </div>
+              
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Proficiency in SQL and one analytics language (Python or R).</li>
+                  <li>Experience with BI tools (e.g. Power BI or Tableau).</li>
+                  <li>Understanding of data governance and privacy.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Government or regulated-sector experience.</li>
+                  <li>Stats/ML fundamentals; version control (Git).</li>
+                </ul>
+              </div>
+                <p>Click to apply</p>
+              
+            </article>  
+          </a>
+        </section>
         
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Proficiency in SQL and one analytics language (Python or R).</li>
-            <li>Experience with BI tools (e.g. Power BI or Tableau).</li>
-            <li>Understanding of data governance and privacy.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Government or regulated-sector experience.</li>
-            <li>Stats/ML fundamentals; version control (Git).</li>
-          </ul>
-        </div>
-          <p>Click to apply</p>
+        <section>
+          <!--JOB 2-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Systems and Network Administrator </h2>
+                <p><strong>Reference number:</strong>SN9M3</p>
+                <p>Maintains secure, reliable servers and networks, resolving incidents and keeping services online.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Melbourne (On-site)</p>
+                <p>Full-time</p>
+                <p>Salary: $90,000 - $110,000</p>
+                <p>Reports to Head of Systems Administration, Technology Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Administer Windows/Linux servers, AD, and enterprise endpoints.</li>
+                  <li>Monitor and maintain networks (TCP/IP, VLANs, DNS/DHCP, Wi-Fi).</li>
+                  <li>Manage patching, backups, and disaster recovery tests.</li>
+                  <li>Troubleshoot incidents and support on-call rotations.</li>
+                  <li>Harden systems and implement security baselines.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Windows Server and/or Linux admin experience.</li>
+                  <li>Routing/switching fundamentals; DNS/DHCP; VPNs.</li>
+                  <li>Virtualisation (VMware/Hyper-V) and backup tooling.</li>
+                  <li>Scripting (PowerShell or Bash).</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Cloud (AWS/Azure), firewalls (Fortinet/Palo Alto).</li>
+                  <li>Infrastructure as Code (Ansible/Terraform); ITIL.</li>
+                  <li>Government/regulated-sector experience.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
         
-      </article>  
-    </a>
-  </section>
-  
-  <section>
-    <!--JOB 2-->
-    <a href="page3.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>Systems and Network Administrator</h2>
-          <p><strong>Reference number:</strong>SN9M3</p>
-          <p>Maintains secure, reliable servers and networks, resolving incidents and keeping services online.</p>
-        </header>
+        <section>
+          <!--JOB 3-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Machine Learning Engineer</h2>
+                <p><strong>Reference number:</strong>ML3K8</p>
+                <p>Builds and deploys models that automate decisions and improve citizen-facing digital services.</p>
+              </header>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Melbourne (on-site)</p>
-          <p>Full-time</p>
-          <p>Salary: $90,000 - $110,000</p>
-          <p>Reports to Head of Systems Administration, Technology Department</p>
-        </div>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Brisbane(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $120,000 - $150,000</p>
+                <p>Reports to Lead Data Scientist</p>
+              </div>
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Administer Windows/Linux servers, AD, and enterprise endpoints.</li>
-            <li>Monitor and maintain networks (TCP/IP, VLANs, DNS/DHCP, Wi-Fi).</li>
-            <li>Manage patching, backups, and disaster recovery tests.</li>
-            <li>Troubleshoot incidents and support on-call rotations.</li>
-            <li>Harden systems and implement security baselines.</li>
-          </ol>
-        </div>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Design, train, and evaluate ML models for production use.</li>
+                  <li>Build data/feature pipelines and model registries (MLflow or similar).</li>
+                  <li>Deploy models as APIs/services and monitor drift/performance.</li>
+                  <li>Work with product teams to define metrics and experiments.</li>
+                  <li>Document solutions and share best practices.</li>
+                </ol>
+              </div>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Windows Server and/or Linux admin experience.</li>
-            <li>Routing/switching fundamentals; DNS/DHCP; VPNs.</li>
-            <li>Virtualisation (VMware/Hyper-V) and backup tooling.</li>
-            <li>Scripting (PowerShell or Bash).</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Cloud (AWS/Azure), firewalls (Fortinet/Palo Alto).</li>
-            <li>Infrastructure as Code (Ansible/Terraform); ITIL.</li>
-            <li>Government/regulated-sector experience.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
-  </section>
-  
-  
-  <section>
-    <!--JOB 3-->
-    <a href="page4.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>Machine Learning Engineer</h2>
-          <p><strong>Reference number:</strong>ML3K8</p>
-          <p>Builds and deploys models that automate decisions and improve citizen-facing digital services.</p>
-        </header>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Python, scikit-learn and/or PyTorch/TensorFlow.</li>
+                  <li>Strong SQL and data wrangling skills.</li>
+                  <li>Docker and CI/CD familiarity.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>AWS/Azure ML services; MLOps tooling.</li>
+                  <li>Privacy-by-design, experimentation (A/B) experience.</li>
+                  <li>Version control (Git) and code review practices.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Brisbane</p>
-          <p>Full-time</p>
-          <p>Salary: $120,000 - $150,000</p>
-          <p>Reports to Lead Data Scientist</p>
-        </div>
+        </section>  
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Design, train, and evaluate ML models for production use.</li>
-            <li>Build data/feature pipelines and model registries (MLflow or similar).</li>
-            <li>Deploy models as APIs/services and monitor drift/performance.</li>
-            <li>Work with product teams to define metrics and experiments.</li>
-            <li>Document solutions and share best practices.</li>
-          </ol>
-        </div>
+        <section>
+          <!--JOB 4--> 
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Management Accountant</h2>
+                <p><strong>Reference number:</strong>MA5Q1</p>
+                <p>Delivers budgeting, forecasting, and cost analysis to support tech program planning and value for money.</p>
+              </header>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Python, scikit-learn and/or PyTorch/TensorFlow.</li>
-            <li>Strong SQL and data wrangling skills.</li>
-            <li>Docker and CI/CD familiarity.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>AWS/Azure ML services; MLOps tooling.</li>
-            <li>Privacy-by-design, experimentation (A/B) experience.</li>
-            <li>Version control (Git) and code review practices.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Perth(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $90,000 - $110,000</p>
+                <p>Reports to Finance Manager</p>
+              </div>
 
-  </section>  
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Own monthly management reporting and variance analysis.</li>
+                  <li>Prepare budgets and rolling forecasts for tech portfolios.</li>
+                  <li>Track CAPEX/OPEX and support business cases.</li>
+                  <li>Partner with delivery teams on financial controls.</li>
+                  <li>Support audits and improve ERP reporting.</li>
+                </ol>
+              </div>
 
-  <section>
-    <!--JOB 4--> 
-    <a href="page5.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>Management Accountant</h2>
-          <p><strong>Reference number:</strong>MA5Q1</p>
-          <p>Delivers budgeting, forecasting, and cost analysis to support tech program planning and value for money.</p>
-        </header>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Accounting degree; CA/CPA qualified or in progress.</li>
+                  <li>Advanced Excel; experience with ERP systems.</li>
+                  <li>Clear stakeholder communication.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Project accounting; procurement familiarity.</li>
+                  <li>Power BI or similar; basic SQL.</li>
+                  <li>Public sector experience.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Perth/hybrid</p>
-          <p>Full-time</p>
-          <p>Salary: $90,000 - $110,000</p>
-          <p>Reports to Finance Manager</p>
-        </div>
+        <section>
+          <!--JOB 5-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Security Consultant</h2>
+                <p><strong>Reference number:</strong>SC7D4</p>
+                <p>Assesses risk, designs controls, and lifts security posture across projects and vendors.</p>
+              </header>
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Own monthly management reporting and variance analysis.</li>
-            <li>Prepare budgets and rolling forecasts for tech portfolios.</li>
-            <li>Track CAPEX/OPEX and support business cases.</li>
-            <li>Partner with delivery teams on financial controls.</li>
-            <li>Support audits and improve ERP reporting.</li>
-          </ol>
-        </div>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Perth(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $120,000 - $150,000</p>
+                <p>Reports to Head of Cyber Security</p>
+              </div>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Accounting degree; CA/CPA qualified or in progress.</li>
-            <li>Advanced Excel; experience with ERP systems.</li>
-            <li>Clear stakeholder communication.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Project accounting; procurement familiarity.</li>
-            <li>Power BI or similar; basic SQL.</li>
-            <li>Public sector experience.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
-  </section>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Perform risk assessments and threat modelling.</li>
+                  <li>Review security architecture for cloud and on-prem solutions.</li>
+                  <li>Assess third-party vendors and advise on remediation.</li>
+                  <li>Develop policies/standards aligned to ISO 27001/ISM.</li>
+                  <li>Support incident response and post-incident reviews.</li>
+                </ol>
+              </div>
 
-  <section>
-    <!--JOB 5-->
-    <a href="page6.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>Security Consultant</h2>
-          <p><strong>Reference number:</strong>SC7D4</p>
-          <p>Assesses risk, designs controls, and lifts security posture across projects and vendors.</p>
-        </header>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Knowledge of ISO 27001, Essential Eight, and risk frameworks.</li>
+                  <li>Cloud security (AWS/Azure) and identity best practices.</li>
+                  <li>Strong communication and report writing.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Certs: CISSP/CISM/IRAP or similar.</li>
+                  <li>Scripting for security automation.</li>
+                  <li>Government/regulated-sector experience.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+        
+        <section>
+          <!--JOB 6-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>DevOps Engineer</h2>
+                <p><strong>Reference number:</strong>DO4V6</p>
+                <p>Automates builds, testing, and cloud deployments for faster, more reliable releases.</p>
+              </header>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Perth/hybrid</p>
-          <p>Full-time</p>
-          <p>Salary: $120,000 - $150,000</p>
-          <p>Reports to Head of Cyber Security</p>
-        </div>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Adelaide(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $110,000 - $140,000</p>
+                <p>Reports to Platform Engineering Lead</p>
+              </div>
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Perform risk assessments and threat modelling.</li>
-            <li>Review security architecture for cloud and on-prem solutions.</li>
-            <li>Assess third-party vendors and advise on remediation.</li>
-            <li>Develop policies/standards aligned to ISO 27001/ISM.</li>
-            <li>Support incident response and post-incident reviews.</li>
-          </ol>
-        </div>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Build and maintain CI/CD pipelines.</li>
+                  <li>Provision infrastructure using IaC (Terraform/CloudFormation).</li>
+                  <li>Improve observability (logging, metrics, tracing).</li>
+                  <li>Harden container and cluster deployments.</li>
+                  <li>Collaborate with teams to optimise release processes.</li>
+                </ol>
+              </div>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Knowledge of ISO 27001, Essential Eight, and risk frameworks.</li>
-            <li>Cloud security (AWS/Azure) and identity best practices.</li>
-            <li>Strong communication and report writing.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Certs: CISSP/CISM/IRAP or similar.</li>
-            <li>Scripting for security automation.</li>
-            <li>Government/regulated-sector experience.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
-  </section>
-  
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>GitHub/GitLab CI or similar.</li>
+                  <li>Docker and Kubernetes.</li>
+                  <li>Terraform or CloudFormation; Bash/Python.</li>
+                  <li>AWS or Azure experience.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Argo CD/Helm; security scanning in pipelines.</li>
+                  <li>Cost optimisation; SRE/on-call exposure.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
 
-  <section>
-    <!--JOB 6-->
-    <a href="page7.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>DevOps Engineer</h2>
-          <p><strong>Reference number:</strong>DO4V6</p>
-          <p>Automates builds, testing, and cloud deployments for faster, more reliable releases.</p>
-        </header>
+        <section>
+          <!--JOB 7-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>UI/UX Designer Lead</h2>
+                <p><strong>Reference number:</strong>UX2L9</p>
+                <p>Leads product design to make government digital services simple, inclusive, and consistent.</p>
+              </header>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Adelaide/hybrid</p>
-          <p>Full-time</p>
-          <p>Salary: $110,000 - $140,000</p>
-          <p>Reports to Platform Engineering Lead</p>
-        </div>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Canberra(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $100,000 - $120,000</p>
+                <p>Reports to Head of Product Design</p>
+              </div>
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Build and maintain CI/CD pipelines.</li>
-            <li>Provision infrastructure using IaC (Terraform/CloudFormation).</li>
-            <li>Improve observability (logging, metrics, tracing).</li>
-            <li>Harden container and cluster deployments.</li>
-            <li>Collaborate with teams to optimise release processes.</li>
-          </ol>
-        </div>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Define design strategy and run discovery/research.</li>
+                  <li>Create wireframes, prototypes, and high-fidelity UI in Figma.</li>
+                  <li>Own and evolve a reusable design system.</li>
+                  <li>Champion accessibility (WCAG 2.2) and inclusive design.</li>
+                  <li>Mentor designers and facilitate workshops with stakeholders.</li>
+                </ol>
+              </div>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>GitHub/GitLab CI or similar.</li>
-            <li>Docker and Kubernetes.</li>
-            <li>Terraform or CloudFormation; Bash/Python.</li>
-            <li>AWS or Azure experience.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Argo CD/Helm; security scanning in pipelines.</li>
-            <li>Cost optimisation; SRE/on-call exposure.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
-  </section>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Portfolio demonstrating end-to-end product design.</li>
+                  <li>Figma (components, variants) and prototyping skills.</li>
+                  <li>User research and usability testing experience.</li>
+                  <li>Knowledge of WCAG and design systems.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Service design; Australian Government Design/Content Standards.</li>
+                  <li>Analytics/telemetry literacy; HTML/CSS basics.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+        
+        <section>
+          <!--JOB 8-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Cyber Security Operations Lead</h2>
+                <p><strong>Reference number:</strong>CS8O5</p>
+                <p>Directs monitoring and incident response to protect platforms and sensitive data.</p>
+              </header>
 
-  <section>
-    <!--JOB 7-->
-    <a href="page8.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>UI/UX Designer Lead</h2>
-          <p><strong>Reference number:</strong>UX2L9</p>
-          <p>Leads product design to make government digital services simple, inclusive, and consistent.</p>
-        </header>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Hobart(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $80,000 - $100,000</p>
+                <p>Reports to Security Operations Manager</p>
+              </div>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Canberra/hybrid</p>
-          <p>Full-time</p>
-          <p>Salary: $100,000 - $120,000</p>
-          <p>Reports to Head of Product Design</p>
-        </div>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Run 24/7 SOC processes and playbooks.</li>
+                  <li>Lead incident response, forensics, and post-incident reviews.</li>
+                  <li>Tune SIEM detections and manage threat intel.</li>
+                  <li>Coordinate vulnerability management and remediation.</li>
+                  <li>Coach analysts and report risk to leadership.</li>
+                </ol>
+              </div>
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Define design strategy and run discovery/research.</li>
-            <li>Create wireframes, prototypes, and high-fidelity UI in Figma.</li>
-            <li>Own and evolve a reusable design system.</li>
-            <li>Champion accessibility (WCAG 2.2) and inclusive design.</li>
-            <li>Mentor designers and facilitate workshops with stakeholders.</li>
-          </ol>
-        </div>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Hands-on SIEM/SOC experience (e.g., Splunk, QRadar).</li>
+                  <li>Incident handling and investigation skills.</li>
+                  <li>Windows/Linux fundamentals; scripting for automation.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Certs: GCIH/GCIA or similar; cloud security exposure.</li>
+                  <li>Familiarity with MITRE ATT&CK and purple-team practices.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Portfolio demonstrating end-to-end product design.</li>
-            <li>Figma (components, variants) and prototyping skills.</li>
-            <li>User research and usability testing experience.</li>
-            <li>Knowledge of WCAG and design systems.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Service design; Australian Government Design/Content Standards.</li>
-            <li>Analytics/telemetry literacy; HTML/CSS basics.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
-  </section>
-  
-  <section>
-    <!--JOB 8-->
-    <a href="page9.html" style="text-decoration:none; color:inherit;">
-      <article>
-        <header>
-          <h2>Cyber Security Operations Lead</h2>
-          <p><strong>Reference number:</strong>CS8O5</p>
-          <p>Directs monitoring and incident response to protect platforms and sensitive data.</p>
-        </header>
+        <section>
+          <!--JOB 9-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Data Engineer</h2>
+                <p><strong>Reference number:</strong>DE3F7</p>
+                <p>Builds robust data pipelines and platforms that make high-quality data available for analytics and products.</p>
+              </header>
 
-        <div>
-          <h3>Job Details</h3>
-          <p>Location: Hobart/hybrid</p>
-          <p>Full-time</p>
-          <p>Salary: $80,000 - $100,000</p>
-          <p>Reports to Security Operations Manager</p>
-        </div>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Sydney(Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $120,000-$140,000 </p>
+                <p>Reports to Lead Data Engineer, Data Governance Department</p>
+              </div>
 
-        <div>
-          <h3>Key Responsibilities</h3>
-          <ol>
-            <li>Run 24/7 SOC processes and playbooks.</li>
-            <li>Lead incident response, forensics, and post-incident reviews.</li>
-            <li>Tune SIEM detections and manage threat intel.</li>
-            <li>Coordinate vulnerability management and remediation.</li>
-            <li>Coach analysts and report risk to leadership.</li>
-          </ol>
-        </div>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Design and maintain batch/streaming data pipelines and ETL/ELT jobs.</li>
+                  <li>Implement data models, quality checks, and lineage/metadata.</li>
+                  <li>Manage cloud data platforms (e.g., Azure/AWS/GCP, Databricks/BigQuery/Snowflake).</li>
+                  <li>Collaborate with analysts, scientists, and platform teams.</li>
+                </ol>
+              </div>
 
-        <div>
-          <h3>Requirements</h3>
-          <h4>Essential</h4>
-          <ul>
-            <li>Hands-on SIEM/SOC experience (e.g., Splunk, QRadar).</li>
-            <li>Incident handling and investigation skills.</li>
-            <li>Windows/Linux fundamentals; scripting for automation.</li>
-          </ul>
-          <h4>Preferable</h4>
-          <ul>
-            <li>Certs: GCIH/GCIA or similar; cloud security exposure.</li>
-            <li>Familiarity with MITRE ATT&CK and purple-team practices.</li>
-          </ul>
-        </div>
-        <p>Click to apply</p>
-      </article>
-    </a>
-  </section>
-    
-</section>
-    
-  <footer>
-    <section>
-      <aside>
-        <h2>About the Digital Services Branch</h2>
-        <p>We design, build, and operate data-informed digital services that make it easier for people to interact with government.</p>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Strong SQL and one language (Python/Scala).</li>
+                  <li>Experience with data warehousing, orchestration, and version control.</li>
+                  <li>Data governance and privacy fundamentals.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Infrastructure-as-code and CI/CD for data.</li>
+                  <li>Streaming (Kafka/Event Hubs/PubSub) and dbt.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
 
-        <h3>Why join us</h3>
-          <ul>
-            <li>Hybrid work with modern tooling (AWS/Azure, Python/TypeScript, Power BI/Tableau).</li>
-            <li>Mentoring, training budget, and clear progression pathways.</li>
-            <li>Impactful, user-centred projects at national scale.</li>
-          </ul>
+        <section>
+          <!--JOB 10-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Business Analyst</h2>
+                <p><strong>Reference number:</strong>BA7K2</p>
+                <p>Translates policy and stakeholder needs into clear requirements and measurable outcomes.</p>
+              </header>
 
-        <h3>Eligibility & checks</h3>
-          <ul>
-            <li>Australian work rights required.</li>
-            <li>Baseline security clearance (or ability to obtain) may be needed for some roles.</li>
-          </ul>
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Canberra (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $100,000-$120,000</p>
+                <p>Reports to Product Manager, Data Governance Department</p>
+              </div>
 
-        <h3>Accessibility</h3>
-        <p>If you need adjustments at any stage, email
-          <a href="mailto:recruitment@example.gov.au"> recruitment@example.gov.au</a>.
-          We welcome candidates from all backgrounds.
-        </p>
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Facilitate discovery, map processes, and document current/future states.</li>
+                  <li>Write user stories and acceptance criteria; manage backlogs.</li>
+                  <li>Support benefits tracking and readiness for change.</li>
+                  <li>Bridge communication across policy, engineering, and operations.</li>
+                </ol>
+              </div>
 
-        <h3>Contact</h3>
-        <p>Questions about roles or the process? Email
-          <a href="mailto:dsb-recruitment@example.gov.au">dsb-recruitment@example.gov.au</a>.
-        </p>
-      </aside>
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Requirements elicitation, process modelling, and stakeholder management.</li>
+                  <li>Experience with agile delivery and JIRA/Confluence.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Government/regulated sector experience.</li>
+                  <li>Data literacy; BI/dashboard familiarity.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
 
-    </section>
-  </footer>
+        <section>
+            <!--JOB 11-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Full-Stack Software Engineer</h2>
+                <p><strong>Reference number:</strong>FS4N8</p>
+                <p>Delivers accessible, performant web applications from UI through APIs and data layers.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Melbourne (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $110,000-$130,000</p>
+                <p>Reports to Engineering Manager, Development Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Build responsive front-ends and secure back-end services.</li>
+                  <li>Write tests, automate deployments, and monitor reliability.</li>
+                  <li>Collaborate with designers, PMs, and platform engineers.</li>
+                  <li>Continuously improve performance and accessibility.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Experience with a modern front-end framework and REST/GraphQL APIs.</li>
+                  <li>Proficiency in one back-end stack (e.g., Node/Java/Python/.NET).</li>
+                  <li>Git, CI/CD, and cloud basics.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Containerisation and IaC (Docker/Kubernetes/Terraform).</li>
+                  <li>Accessibility (WCAG) and security-by-design practices.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 12-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Solutions Architect (Part-Time)</h2>
+                <p><strong>Reference number:</strong>SA2H5</p>
+                <p>Shapes end-to-end solution designs that balance security, cost, and operability.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Brisbane (Hybrid)</p>
+                <p>Part-time</p>
+                <p>Salary: $150,000-$170,000</p>
+                <p>Reports to Head of Architecture, Infrastructure Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Create target/reference architectures and design documents.</li>
+                  <li>Guide squads on integration, security, and non-functional requirements.</li>
+                  <li>Run design reviews and govern technical debt.</li>
+                  <li>Partner with procurement and vendors on technical selections.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Cloud architecture (AWS/Azure/GCP) and enterprise integration patterns.</li>
+                  <li>Threat modelling, IAM, networking fundamentals.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Public sector or highly regulated environments.</li>
+                  <li>Certification (e.g., AWS SA Pro, TOGAF).</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+        
+        <section>
+            <!--JOB 13-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Cloud & Infrastructure Manager</h2>
+                <p><strong>Reference number:</strong>CIM8R1</p>
+                <p>Leads cloud, network, and platform operations to deliver reliable, cost-effective services.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Perth (On-site)</p>
+                <p>Full-time</p>
+                <p>Salary: $140,000-$190,000</p>
+                <p>Reports to Director of Infrastructure, Infrastructure Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Own cloud/platform roadmaps, budgets, and vendor management.</li>
+                  <li>Uphold SLAs, BCP/DR, and security baselines across environments.</li>
+                  <li>Lead a team across networks, servers, and workplace tech.</li>
+                  <li>Drive automation, observability, and cost optimisation.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>People leadership and service operations (ITIL/SRE practices).</li>
+                  <li>Deep knowledge of cloud, networking, and identity platforms.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Major migration or datacentre-exit experience.</li>
+                  <li>Security certifications (CISSP/CISM) or cloud architect certs.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 14-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Data Security Engineer</h2>
+                <p><strong>Reference number:</strong>DSE5P9</p>
+                <p>Implements security controls to protect data, platforms, and integrations.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Adelaide (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $130,000-$150,000</p>
+                <p>Reports to Security Engineering Lead, Cybersecurity Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Engineer controls for IAM, secrets, KMS, DLP, and data encryption.</li>
+                  <li>Harden cloud services; build guardrails and automated checks.</li>
+                  <li>Support incident response and threat modelling.</li>
+                  <li>Partner with data and platform teams on secure-by-default patterns.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Security engineering in cloud environments (AWS/Azure/GCP).</li>
+                  <li>Knowledge of IAM, network security, and logging/monitoring.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Certifications (e.g., CISSP, CCSK, AZ-500, SAA-C03).</li>
+                  <li>Experience with data platforms (Snowflake/BigQuery/Databricks).</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 15-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Systems Architect</h2>
+                <p><strong>Reference number:</strong>SYA9C3</p>
+                <p>Defines system architecture and integration patterns for scalable, secure services.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Melbourne (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $130,000-$160,000</p>
+                <p>Reports to Head of Architecture, Development Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Set architectural standards, roadmaps, and decision records.</li>
+                  <li>Guide solution designs across APIs, data, and security.</li>
+                  <li>Review proposals, manage risks, and govern non-functionals.</li>
+                  <li>Mentor engineers and champion re-useable patterns.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Architecture experience across distributed systems and cloud.</li>
+                  <li>Security, networking, and observability fundamentals.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Event-driven and data mesh patterns.</li>
+                  <li>Certifications (TOGAF/Cloud Architect).</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 16-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Data Privacy Officer</h2>
+                <p><strong>Reference number:</strong>DPO3M6</p>
+                <p>Oversees privacy compliance, advising teams on lawful, ethical use of data.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Canberra (On-site)</p>
+                <p>Full-time</p>
+                <p>Salary: $110,000-$140,000</p>
+                <p>Reports to Chief Information Security Officer, Cybersecurity Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Maintain privacy framework, policies, PIAs, and DPIAs.</li>
+                  <li>Advise on consent, retention, cross-border transfers, and DSARs.</li>
+                  <li>Partner with legal, security, and data teams on privacy by design.</li>
+                  <li>Conduct training and report on compliance metrics.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Knowledge of Australian Privacy Principles and related standards.</li>
+                  <li>Risk assessment and stakeholder engagement.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>IAPP certifications (CIPP/E, CIPM) or equivalent.</li>
+                  <li>Experience in government or regulated sectors.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 17-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Front-End Software Engineer</h2>
+                <p><strong>Reference number:</strong>FE5A1</p>
+                <p>Builds accessible, component-driven UIs that work across devices and assistive tech.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Hobart (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $100,000-$120,000</p>
+                <p>Reports to UI Engineering Lead, Development Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Implement UI components, state management, and routing.</li>
+                  <li>Ensure WCAG compliance, performance budgets, and testing.</li>
+                  <li>Collaborate with UX, content, and back-end teams.</li>
+                  <li>Maintain design systems and documentation.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Proficiency with HTML/CSS/JS and a modern framework.</li>
+                  <li>Accessibility and web performance practices.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Experience with design systems and Storybook/testing tools.</li>
+                  <li>TypeScript and end-to-end testing.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 18-->
+          <a href="apply.html" >
+            <article>
+              <header>
+                <h2>Graduate (Software Developer) EOI</h2>
+                <p><strong>Reference number:</strong>GR1Q9</p>
+                <p>Hands-on experience delivering real features with mentoring and training.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Melbourne (On-site)</p>
+                <p>Part-time</p>
+                <p>Salary: $65,000-$80,000</p>
+                <p>Reports to Engineering Manager, Development Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Contribute to sprints, code reviews, and unit tests.</li>
+                  <li>Pair with mentors to learn secure and accessible coding.</li>
+                  <li>Document work and demo outcomes.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Foundational knowledge of web technologies or a back-end language.</li>
+                  <li>Willingness to learn, collaborate, and follow guidance.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Internship or open-source contributions.</li>
+                  <li>Basic Git and issue tracking familiarity.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 19-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Data Architect</h2>
+                <p><strong>Reference number:</strong>DAR7V2</p>
+                <p>Owns enterprise data architecture, modelling, and governance standards.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Sydney (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $170,000-$190,000 </p>
+                <p>Reports to Head of Data Architecture, Data Governance Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Define data models, domains, and interoperability patterns.</li>
+                  <li>Set policies for quality, lineage, and security.</li>
+                  <li>Guide platform choices and migration roadmaps.</li>
+                  <li>Coach teams on best practices and re-usable assets.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Enterprise data modelling and architecture experience.</li>
+                  <li>Data governance frameworks; API and integration patterns.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Experience across analytics platforms (Snowflake/BigQuery/etc.).</li>
+                  <li>Metadata, catalogues, and privacy-by-design.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+        <section>
+            <!--JOB 20-->
+          <a href="apply.html">
+            <article>
+              <header>
+                <h2>Cyber Security Operations Lead</h2>
+                <p><strong>Reference number:</strong>CSO7B5</p>
+                <p>Leads SOC functions and threat detection/response to keep services resilient.</p>
+              </header>
+
+              <div>
+                <h3>Job Details</h3>
+                <p>Location: Perth (Hybrid)</p>
+                <p>Full-time</p>
+                <p>Salary: $150,000-$180,000 </p>
+                <p>Reports to CISO, Cybersecurity Department</p>
+              </div>
+
+              <div>
+                <h3>Key Responsibilities</h3>
+                <ol>
+                  <li>Lead monitoring, detection engineering, and incident response.</li>
+                  <li>Own playbooks, threat intel, and purple-team exercises.</li>
+                  <li>Manage SIEM/SOAR platforms and MDR/MSSP partners.</li>
+                  <li>Report risk and readiness to leadership; drive continuous improvement.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ul>
+                  <li>Hands-on SOC leadership and incident response experience.</li>
+                  <li>Knowledge of MITRE ATT&CK, detection engineering, and cloud security.</li>
+                </ul>
+                <h4>Preferable</h4>
+                <ul>
+                  <li>Certifications (GCIA/GCED/GCIH/CISM/CISSP).</li>
+                  <li>Public sector or critical infrastructure experience.</li>
+                </ul>
+              </div>
+              <p>Click to apply</p>
+            </article>
+          </a>
+        </section>
+
+
+      </section>
+
+
+    <footer id="footer-info">
+      <section>
+        <aside>
+          <h2>About the Digital Services Branch</h2>
+          <p>We design, build, and operate data-informed digital services that make it easier for people to interact with government.</p>
+
+          <h3>Why join us</h3>
+            <ul>
+              <li>Hybrid work with modern tooling (AWS/Azure, Python/TypeScript, Power BI/Tableau).</li>
+              <li>Mentoring, training budget, and clear progression pathways.</li>
+              <li>Impactful, user-centred projects at national scale.</li>
+            </ul>
+
+          <h3>Eligibility & checks</h3>
+            <ul>
+              <li>Australian work rights required.</li>
+              <li>Baseline security clearance (or ability to obtain) may be needed for some roles.</li>
+            </ul>
+
+          <h3>Accessibility</h3>
+          <p>If you need adjustments at any stage, email
+            <a href="mailto:recruitment@example.gov.au"> recruitment@example.gov.au</a>.
+            We welcome candidates from all backgrounds.
+          </p>
+
+          <h3>Contact</h3>
+          <p>Questions about roles or the process? Email
+            <a href="mailto:dsb-recruitment@example.gov.au">dsb-recruitment@example.gov.au</a>.
+          </p>
+        </aside>
+
+      </section>
+    </footer>
+      
+      </main>
+    </div>
+  </div>
 </body>
 </html>

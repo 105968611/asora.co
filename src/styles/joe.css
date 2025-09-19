@@ -1,32 +1,166 @@
-article {
-  border: 2px solid #ddd;      /* thin grey border */
-  border-radius: 10px;         /* rounded corners */
-  padding: 1.5rem;             /* space inside the box */
-  margin: 1.5rem 0;            /* space between boxes */
-  background-color: #fff;      /* white background */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* subtle shadow */
-  transition: transform 0.2s, box-shadow 0.2s;
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr;/*single column*/
+  gap: clamp(14px, 2.2vw, 22px);
+  padding: clamp(16px, 3vw, 32px);
+  max-width: 800px;
+  margin: 0;
 }
 
-/* Hover/focus state for interactivity */
-article:hover,
+/*ensuring accessibility for keyboard users*/
+/*focus-visible is for keyboard users only*/
+/*creates outline when tabbing through links*/
+.job-grid a:focus-visible article {
+  outline: 3px solid #005fcc;
+  outline-offset: 4px;
+}
+
+.job-grid article,
+article {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: clamp(14px, 2vw, 24px);
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s; /*smooth box shadow effect, without it it just snaps into the box shadow*/
+}
+/*above is vital*/
+
+
+/*style applied when hovering*/ 
+/*focus-within is for keyboard users*/
+/*translate helps lift the card for jump effect*/
+article:hover, 
 article:focus-within {
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
 
-.job-grid {display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 2rem;                             /* space between boxes */
-  padding: 2rem;
+
+/*ensuring font-size is responsive*/ 
+/*ensures paragraphs and different headings are different sizes*/
+.job-grid article h2 {
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  margin: 0 0 0.35rem;
 }
 
-/* Ensuring all job cards look consistent */
+.job-grid article h3 {
+  font-size: clamp(0.95rem, 1.9vw, 1.1rem);
+  margin-top: 1rem;
+}
 
-.job-grid article {
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  padding: 1.5rem;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+.job-grid article p,
+.job-grid article li {
+  font-size: clamp(0.92rem, 1.6vw, 1rem);
+  line-height: 1.5;
+}
+
+
+/*Reducing motion for users who prefer it*/
+/*settings on computer automatically detected by browser*/
+@media (prefers-reduced-motion: reduce) {
+  article { transition: none; }
+  article:hover,
+  article:focus-within { transform: none; }
+}
+
+/*TO MAKE BANNER LOGO VISIBLE*/
+/*Also incorporated responsive design*/
+
+/*makes background dark and aligns to center*/
+/*additional responsive padding*/
+.hero-banner {
+  background: #1a1a1a;
+  padding: clamp(48px, 6vw, 96px) 20px; 
+  text-align: center;
+}
+
+
+/*centers content vertically and horizontally*/
+.hero-banner .logo {
+  width: min(300px, 80%); 
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/*makes text white and ensures appropriate sizing*/
+/*removes margins for ease of styling*/
+.hero-banner h1 {
+  color: white;
+  font-size: clamp(1.25rem, 2.5vw, 2rem); 
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Footer container */
+
+/*centers the box and aligns text to left*/
+#footer-info{
+  width: min(90%, 65ch);  /*ensures text doesn't spill out each line*/
+  margin: 0 auto;          
+  text-align: left;        
+}
+
+/*styling for different elements in footer*/
+#footer-info h2{ 
+  text-align: center; 
+  margin: 0 0 .75rem; /*makes sure little gap is between h2 and next text*/
+}
+#footer-info h3{
+  margin: 1.25rem 0 .5rem; /*smaller gaps*/
+}
+#footer-info p{
+  margin: .25rem 0 1rem; /*smaller gaps, but the code makes it stick up to the above text elements*/
+  line-height: 1.5;
+}
+#footer-info ul{
+  margin: .25rem 0 1rem;
+  padding-left: 1.2em;     /*brings bullets in a bit*/
+  list-style: disc outside;
+}
+#footer-info li{ margin: .25rem 0; } /*compressess the list items by sticking up*/
+
+/*For aside navigation bar*/
+
+/*YAYAYAYYA*/
+
+
+
+
+
+/* keep border/padding inside declared widths */
+* { box-sizing: border-box; }
+
+/* RIGHT column: as required */
+#cooler-nav{
+  width: 25%;
+  float: right;
+  border: 2px solid #ccc;
+  margin: 10px;            /* this is extra space, so compensate on .main */
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+/* LEFT column */
+.main{
+  float: left;
+  width: calc(75% - 20px); /* 75% minus aside’s 10px left+right margins */
+}
+
+/* contain floats so content below doesn't slide up */
+.layout::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* make left-column content fill the column instead of re-centering */
+.job-grid{
+  max-width: 100%;
+  margin: 0;               /* not 0 auto */
+}
+#footer-info{
+  max-width: 100%;
+  margin: 0;               /* avoid extra centering gaps */
 }
