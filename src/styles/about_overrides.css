@@ -18,43 +18,61 @@ h1 {
     margin-top: 5rem;
 }
 .aboutSections {
-    /* padding-left: 10%; */
     width: 90%;
     margin: 0 auto;
     clear: both;
 }
-#MembersBrief {
+.AllMembers {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    row-gap: 1em;
-    column-gap: 5em;
-    padding-bottom: 5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 2em;
 }
 .AboutMembers {
+    display: grid;
+    grid-template-rows: 2fr 8fr;
     border: 2px solid #000000;
-    border-radius: 14px;
-    padding: 3%;
-    padding-top: 0%;
+    border-radius: 1em;
+    padding: 1%;
     background: #7f7f7f;
 }
-.AboutMembers img {
-    float: left;
+.ProfileHead {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
 }
-.AboutMembers p {
+.ProfileTop {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.ProfileImage {
+    border: 2px solid #000000;
+    border-radius: 1em;
+}
+.ProfileInfo {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
     clear: both;
 }
-aside {
-    float: right;
-    clear: none;
+.ProfileMain {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
 }
-#FunFacts {
+.ProfileSide {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5em;
+    padding-left: 2em;
+    border-left: 2px solid #000000;
+}
+.FunFacts {
     width: max-content;
     background-color: #c3c3c3;
 }
-#FunFacts tr:hover {
+.FunFacts tr:hover {
     background-color: #ffffff;
 }
-#FunFacts th:hover {
+.FunFacts th:hover {
     color: #ffffff;
     background-color: #494949;
 }
