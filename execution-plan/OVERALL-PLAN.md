@@ -10,16 +10,16 @@
 - [ ] Job Role Research (Look in Project Scope) 
 - [ ]  Jira Project Management 
 	-  [x] Sprints
-	-  [ ] Task
+	-  [x] Task
 	-  [ ] User Stories
-	-  [ ] Epics
+	-  [x] Epics
 - [x]  Brand Design—Company Name, Logo, Colour Palette, Typography  
 - [x]  Wireframes 
-- [ ] Completed Job Role Research 
+- [x] Completed Job Role Research 
 - [x] Brand Design  
-- [ ] Completed a Roadmap/Plan on Specified Role and Input in Timeline sheet
+- [x] Completed a Roadmap/Plan on Specified Role and Input in Timeline sheet
 - [ ] Foundational Layout of each html code 
-- [ ] Started Coding on HTML 
+- [x] Started Coding on HTML 
 - [ ] Create basic HTML form structure
 	- [ ] Add all form inputs with labels, placeholders, and attributes
 	- [ ] Use proper types `type="email"`, `type="tel"`, `type="file"`, etc.).
