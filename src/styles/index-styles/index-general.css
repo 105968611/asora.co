@@ -1,5 +1,5 @@
 
-/* General Class */
+/* Overall Class Applied to all html */
 
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -7,13 +7,25 @@ body {
     padding-top: 60px;
 }
 
+:root {
+  /*asora colors*/
+  --asora-white: #fff;
+  --asora-warm-sand:#dcd4ca;
+  --asora-rose-gray:#c2b5b4;
+  --asora-dusty-lavander: #948e98;
+  --asora-ash-grape: #696772;
+  --asora-stormy-sea: #2c4853;
+  --asora-onyx-green: #1d2628;
+}
+
+
 
 /* Nav Bar */
 
 .nav-panel {
     background-color: pink;
     height: 75px;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
@@ -23,8 +35,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    position: fixed;
-    z-index: 100;
+    position: fixed; /* Nav Bar stay put*/
+    z-index: 100; /*Top layer, no element will overtake*/
 
     align-items: center;
 }
@@ -43,7 +55,7 @@ body {
     }
 
 
-.right-section a {
+.right-section a { /* Editing anchor style*/
     font-weight: 500;
     text-decoration: none;
     color: black;	
@@ -51,6 +63,7 @@ body {
 
 
 /* Footer */
+/* Footer- Column/Row Section*/
 
 footer {
     width: 100%;
@@ -70,14 +83,14 @@ footer h3 {
     margin-top: 20px;
 }
 
-.separator {
+.separator { /* Lines at the bottom per row*/
     border: solid rgb(148, 142, 152);
     border-width: 1px;
     border-style: solid;
 }
 
 
-.footer-row {
+.footer-row { /*Overall composition of row */
     width: 80%;
     height: 500px;
     margin: auto;
@@ -87,12 +100,12 @@ footer h3 {
     justify-content: space-between;
 }
 
-.footer-column {
+.footer-column { /*Overall composition for column */
     flex-basis: 15%;
     padding: 10px;
 }
 
-footer ul {
+footer ul { /*List for Menu */
     list-style: none;
     line-height: 2.5;
     text-align: left;
@@ -109,7 +122,7 @@ footer ul {
         transition: 0.2s;
 }
 
-.listing:hover {
+.listing:hover { /* Hover animation for Menu Listing*/
     background-color: rgba(148, 142, 152, 0.25);
     border-radius: 5px;
 }
@@ -130,7 +143,7 @@ p, .email-id {
     margin-top: 20px;
     font-size: 14px;
 }
-form {
+form { /* Section for user-data, email for Newsletter*/
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -143,11 +156,11 @@ form {
 }
 
 .email-icon {
-    height: 35px;
-    width: 35px;
+    height: 32px;
+    width: 32px;
     padding: 0 5px 0 0;
 }
-.email-textbox {
+.email-textbox { /*Style for text placeholder */
     color: #2c3a4b;
     border: 1px solid rgb(44, 72, 83);
     border-radius: 5px;
@@ -155,77 +168,102 @@ form {
     padding-right: 25px;
     font-weight: 500;
     font-size: 16px;
+    flex-grow: 1;
 
 }
-.submit-button {
+.submit-button { /* Submit button-icon style */
     height: 12px;
     width: 12px;
     margin-left: 12px;
     margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15); /*Opacity background color*/
     border-radius: 20px;
     padding: 10px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease; /*Transition time for bg opacity */
 }
 
-.submit-button:hover {
+.submit-button:hover {  /*Opacity transition for Submit button  */
     height: 15px;
     width: 15px;
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-.social-media {
+.social-media { /*Class for 'Our Socials Column */
     padding-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-bottom: 1px solid rgb(148, 142, 152);
+    border-bottom: 1px solid var(--asora-dusty-lavander);
     margin-bottom: 30px;
     margin-top: 35px;
 
     vertical-align: top;
 }
 
-.social-media img {
-    margin-top: 20px;
+.social-media img { /*Targeting img class in social-media div */
+    margin-top: 5px;
     height: 35px;
     width: 35px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
 
-.github-icon {
+.github-icon { 
     margin-right: 20px;
 }
 
-.social-media img:hover {
+.social-media img:hover { /*Size transition */
     height: 38px;
     width: 38px;
 }
 
 .social-icons {
     display: inline-block;
-    position: relative;
+    position: relative; /*Position set for Hover tooltip feature */
 }
 
-.tooltip {
+.tooltip { 
     position: absolute;
     background-color: rgb(150, 150, 150);
     color: white;
+    padding: 4px 8px 4px 8px;
     padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 2px;
     bottom: -20px;
     font-size: 12px;
     opacity: 0;
-    transition: opacity 0.15s;
+    transition: opacity 0.15s ease-out;
     pointer-events: none;
     white-space: nowrap;
 }
 
-.social-icons:hover .tooltip {
+.social-icons:hover .tooltip { /*Hover animation for hidden tooltip*/
     opacity: 1;
+}
+
+/* Footer- Copyright Section*/
+
+.copyright-section {
+    font-size: 10px;
+    color: var(--asora-ash-grape);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.gov-logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pp-tos-inclusion {
+    justify-content: flex-end;
+    margin-right: 10px;
 }
