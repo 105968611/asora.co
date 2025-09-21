@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="about">
+    <!-- Navigation bar with links to all sections -->
     <header class="header">
         <div class="navbar">
             <div class="logo_container">
@@ -79,7 +80,8 @@
 
     </header>
 
-    <h1>Meet our Team</h1>
+    <h1 id="AboutPageTitle">Meet our Team</h1>
+    <!-- Section containing basic group information, consisting of the group name and class day/time -->
     <section class="aboutSections" id="GroupInfo">
         <p>Learn more about our team: </p>
         <ul>
@@ -91,13 +93,16 @@
             </li>
         </ul>
     </section>
+    <!-- Section for all member profiles, both short and extended -->
     <section class="aboutSections" id="MemberInfo">
         <div class="AboutProfiles">
             <div class="MembersBrief">
+                <!-- Brief profiles only containing names, titles, student ID's and a short description.
+                Good for a quick overview of the team -->
                 <a href="#Nathan" title="Click for Details">
                 <div class="AboutBrief" id="NathanBrief">
-                    <div class="ProfileImage">
-                        <img src="images/Nathan" alt="Picture of Nathan" height="150px" width="150px"/>
+                    <div class="MiniProfileImage">
+                        <img src="images/Nathan" alt="Picture of Nathan" height="150" width="150"/>
                     </div>
                     <div class="MiniProfileRight">
                         <div class="MiniTop">
@@ -121,7 +126,7 @@
                 <a href="#Hannah" title="Click for Details">
                 <div class="AboutBrief" id="HannahBrief">
                     <div class="ProfileImage">
-                        <img src="images/Hannah" alt="Picture of Hannah" height="150px" width="150px"/>
+                        <img src="images/Hannah" alt="Picture of Hannah" height="150" width="150"/>
                     </div>
                     <div class="MiniProfileRight">
                         <div class="MiniTop">
@@ -145,7 +150,7 @@
                 <a href="#Joseph" title="Click for Details">
                 <div class="AboutBrief" id="JosephBrief">
                     <div class="ProfileImage">
-                        <img src="images/Joseph" alt="Picture of Joseph" height="150px" width="150px"/>
+                        <img src="images/Joseph.png" alt="Picture of Joseph" height="150" width="150"/>
                     </div>
                     <div class="MiniProfileRight">
                         <div class="MiniTop">
@@ -169,7 +174,7 @@
                 <a href="#Bela" title="Click for Details">
                 <div class="AboutBrief" id="BelaBrief">
                     <div class="ProfileImage">
-                        <img src="images/Bela" alt="Picture of Bela" height="150px" width="150px"/>
+                        <img src="images/Bela" alt="Picture of Bela" height="150" width="150"/>
                     </div>
                     <div class="MiniProfileRight">
                         <div class="MiniTop">
@@ -191,11 +196,12 @@
                     </div>
                 </div></a>
             </div>
+            <!-- Detailed profiles to introduce each member -->
             <div class="AllMembers">
                 <div class="AboutMembers" id="Nathan">
                     <div class="ProfileHead">
                         <div class="ProfileImage">
-                            <img src="images/Nathan" alt="Picture of Nathan" height="175px" width="175px"/>
+                            <img src="images/Nathan" alt="Picture of Nathan" height="175" width="175"/>
                         </div>
                         <div class="ProfileTop">
                             <div class="ProfileTitle">
@@ -273,7 +279,7 @@
                 <div class="AboutMembers" id="Hannah">
                     <div class="ProfileHead">
                         <div class="ProfileImage">
-                            <img src="images/Hannah" alt="Picture of Hannah" height="175px" width="175px"/>
+                            <img src="images/Hannah" alt="Picture of Hannah" height="175" width="175"/>
                         </div>
                         <div class="ProfileTop">
                             <div class="ProfileTitle">
@@ -351,7 +357,7 @@
                 <div class="AboutMembers" id="Joseph">
                     <div class="ProfileHead">
                         <div class="ProfileImage">
-                            <img src="images/Joseph.png" alt="Picture of Joseph" height="175px" width="175px"/>
+                            <img src="images/Joseph.png" alt="Picture of Joseph" height="175" width="175"/>
                         </div>
                         <div class="ProfileTop">
                             <div class="ProfileTitle">
@@ -429,7 +435,7 @@
                 <div class="AboutMembers" id="Bela">
                     <div class="ProfileHead">
                         <div class="ProfileImage">
-                            <img src="images/Bela" alt="Picture of Bela" height="175px" width="175px"/>
+                            <img src="images/Bela" alt="Picture of Bela" height="175" width="175"/>
                         </div>
                         <div class="ProfileTop">
                             <div class="ProfileTitle">
@@ -508,6 +514,7 @@
             </div>
         </div>
     </section>
+    <!-- Section containing the group photo, emphasizing team collaboration -->
     <section class="aboutSections" id="GroupPhoto">
         <figure>
             <img src="images/GroupPhoto.png" alt="Group Photo of Employment Final Boss Members" style="border: 2px solid black; border-radius: 5px;"/>

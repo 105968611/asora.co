@@ -8,12 +8,12 @@ contributors: Nathan
 
 created: 16 September 2025
 
-last modified: 16/09/25
+last modified: 21/09/25
 
 description: css for about.html, could be merged(?)
 
 */
-h1 {
+#AboutPageTitle {
     text-align: center;
     margin-top: 5rem;
 }
@@ -25,7 +25,7 @@ h1 {
 .AboutProfiles {
     display: grid;
     grid-template-rows: 1fr 7fr;
-    row-gap: 10em;
+    row-gap: 5em;
 }
 .MembersBrief {
     display: grid;
@@ -36,7 +36,7 @@ h1 {
 }
 .AboutBrief {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2.5fr;
     border: 2px solid #000000;
     border-radius: 1em;
     padding: 1%;
@@ -44,7 +44,7 @@ h1 {
 }
 .MiniProfileRight {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 .MiniTop {
     display: grid;
@@ -73,7 +73,7 @@ h1 {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-.ProfileImage {
+.ProfileImage, .MiniProfileImage {
     width: fit-content;
     height: fit-content;
     border: 2px solid #000000;
