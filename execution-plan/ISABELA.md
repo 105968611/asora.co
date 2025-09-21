@@ -39,32 +39,32 @@
 **Goal:** Complete HTML structure of `form.html` with clean semantics.
 
 - **Day 1–2:**
-    - [ ] Add all form elements: `<label>`, `<input>`, `<textarea>`, `<select>` if needed.
-    - [ ] Use correct input types (`email`, `tel`, `file`, `text`).
+    - [x] Add all form elements: `<label>`, `<input>`, `<textarea>`, `<select>` if needed.
+    - [x] Use correct input types (`email`, `tel`, `file`, `text`).
 - **Day 3:**
-    - [ ] Group related fields with `<fieldset>` and `<legend>`.
+    - [x] Group related fields with `<fieldset>` and `<legend>`.
 - **Day 4–5:**
-    - [ ] Add form buttons (`Submit`, `Reset`).
-    - [ ] Start basic CSS:
-        - [ ] Align labels and inputs.
-        - [ ] Add padding and margins.
+    - [x] Add form buttons (`Submit`, `Reset`).
+    - [x] Start basic CSS:
+        - [x] Align labels and inputs.
+        - [x] Add padding and margins.
 - **Day 6–7:**
-    - [ ]  Create a neat layout using **Flexbox** or **CSS Grid** so it looks professional.
+    - [x]  Create a neat layout using **Flexbox** or **CSS Grid** so it looks professional.
 
 ---
 ## **Week 3 – Develop & Style jobs.html**
 
 
 - **Day 1–2:**
-    - [ ] Fill in company information (real or placeholder text).
-    - [ ] Add an image/logo if possible.
+    - [x] Fill in company information (real or placeholder text).
+    - [x] Add an image/logo if possible.
 - **Day 3–4:**
-    - [ ] Apply CSS to match the form page:
-        - [ ] Same font and colors.
-        - [ ]  Use columns or sections for layout.
+    - [x] Apply CSS to match the form page:
+        - [x] Same font and colors.
+        - [x] Use columns or sections for layout.
 - **Day 5–6:**
-    - [ ]  Make navigation bar responsive (stacked on mobile).
-    - [ ]  Add hover effects for links.
+    - [x]  Make navigation bar responsive (stacked on mobile).
+    - [x]  Add hover effects for links.
 - **Day 7:**
     - [ ] Do a mini review of both pages and adjust spacing.
 
