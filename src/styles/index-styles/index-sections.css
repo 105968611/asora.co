@@ -2,7 +2,7 @@
 /* SECTION/PAGES HTML*/
 
 
-/* Page 1 */
+/* Page 1 - Opening Banner*/
 .page-1 {
   position: relative;
   }
@@ -22,23 +22,32 @@
   left: 45px;
   }
 
-  /* Page 2 */
+  /* Page 2- About the Company */
 
 .page-2{
-  height: 300px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: black;
   margin-top: -5px;
 }
 
-.description-page2 {
-  text-align: center;
-  font-size: 25px;	
-  margin: 0;
+.page-2 h2, .description-page2 {
   color: white;
-  width: 1050px;
+  text-align: center;
+  margin: 0;
+}
+
+.page-2 h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.description-page2 {
+  font-size: 20px;	
+  width: 805px;
 }
 
 .bg2-page3 {
@@ -47,7 +56,7 @@
   position: relative;
 }
 
-/* Page 3 */
+/* Page 3 - Banner for Careers Page */
 .page-3{
   height: 800px;
   display: flex;
@@ -104,7 +113,7 @@
   padding: 11.5px 23.5px;
 }
 
-/* Page 4 */
+/* Page 4 - Why Work with Asora */
 
 .page-4 {
   width: 100%;
@@ -145,21 +154,23 @@
 .descrip-p4 {
   margin-top: 20px;
   margin-bottom: 0;
+  font-size: 18px;
 }
 
-/* Page 5 */
+/* Page 5  - Perks & Benefits */
 .page-5 {
-  height: 600px;
+  height: 700px;
 }
 
 .page-5 h2{
   margin-left: 120px;
   font-size: 35px;
+  margin-bottom: 40px;
 }
 
 .overall-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 35px;
   align-items: center;
 
@@ -167,17 +178,16 @@
 }
 
 .box-p5 {
-  height: 400px;
-  width: 400px;
-  background-image: url(/src/images/background/bg4.png),
-   rgba(0, 0, 0, 1);
+  height: 500px;
+  width: 500px;
+  background-image: rgba(0, 0, 0, 1);
   background-size: cover;
   background-position: right;
   cursor: pointer;
 
   border-radius: 15px;
   position: relative;
-  transition: 0.2s;
+  transition: 0.15s;
 }
 
 .box-p5:hover {
@@ -189,12 +199,55 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 70%;
   transform: translate(-50%, -50%);
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Page 6 */
+.box-text p {
+  font-size: 20px;
+}
+
+.box-text h3 {
+  font-size: 25px;
+  margin: 0;
+
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+.box-text h3 {
+  transform: translateY(40px);
+}
+
+.box-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+
+  transform: translateY(0);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.box-p5:hover .box-text h3 {
+  transform: translateY(-10px);
+}
+
+.box-p5:hover .box-text p {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.box-1 {
+  background-image: url(/src/images/background/bg5.png);
+}
+
+/* Page 6 - Banner to the Careers Page*/
 
 .page-6 {
   height: 800px;
@@ -220,3 +273,138 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+    /* General */
+    body {
+        padding-top: 50px;
+    }
+
+    /* Nav Bar */
+    .right-section ul li {
+        margin-right: 20px;
+    }
+
+    /* Page 1-Banner */
+    .slogan-page1 {
+        font-size: 40px;
+        width: 90%;
+        bottom: 100px;
+        left: 5%;
+    }
+
+    /* Page 2-About the Company */
+    .page-2 {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .page-2 h2 {
+        font-size: 30px;
+    }
+
+    .description-page2 {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    /* Page 3&6-Banners */
+    .topic-page3,
+    .topic-page6 {
+        font-size: 35px;
+        width: 90%;
+    }
+    
+    .page-3, .page-6 {
+        height: 500px;
+    }
+
+    /* Page 4-Why Work with Asora */
+    .page-4 {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .media-page4 {
+        width: 100%;
+    }
+
+    .page4-info {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+
+    .display-img-p4 {
+        width: 100%;
+    }
+    
+    /* Page 5-Life at Asora */
+    .page-5 {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .page-5 h2 {
+        margin: 40px 0 20px 20px;
+        text-align: left;
+    }
+
+    .overall-row {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .box-p5 {
+        height: 350px;
+        width: 100%;
+    }
+
+    /* Footer*/
+    footer {
+        padding: 20px;
+    }
+
+    .footer-row {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    
+    .footer-column {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-column ul {
+        text-align: center;
+    }
+    
+    .footer-column a, .footer-column p {
+        padding: 5px;
+    }
+    
+    form {
+        justify-content: center;
+    }
+    
+    .social-media {
+        justify-content: center;
+    }
+    
+    .email-textbox {
+        width: 60%;
+    }
+    
+    .copyright-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pp-tos-inclusion {
+        margin-top: 10px;
+    }
+}
