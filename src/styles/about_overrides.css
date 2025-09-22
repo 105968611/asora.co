@@ -33,64 +33,12 @@ description: css for about.html, could be merged(?)
 .aboutSections {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
     clear: both;
 }
-/* .AboutProfiles {
-    display: grid;
-    grid-template-rows: 1fr 7fr;
-    row-gap: 5em;
-} */
 .MiniName, .ProfileName {
     font-weight: 500;
 }
-/* .MembersBrief {
-    width: 60%;
-    padding-left: 20%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1em;
-    column-gap: 1em;
-} */
-/* .AboutBrief {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 2px solid #000000;
-    border-radius: 1em;
-    padding: 1%;
-    background-color: var(--asora-white);
-} */
-/* .MiniProfileRight {
-    display: grid;
-    grid-template-rows: 1fr 0fr;
-}
-.MiniTop {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-} */
-/* .AllMembers {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 2em;
-}
-.AboutMembers {
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    border: 2px solid #000000;
-    border-radius: 1em;
-    padding: 1%;
-    background: var(--asora-white);
-}
-.ProfileHead {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    row-gap: 1em;
-    column-gap: 1em;
-}
-.ProfileTop {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-} */
  .AllMembers {
     display: grid;
     row-gap: 2em;
@@ -103,9 +51,9 @@ description: css for about.html, could be merged(?)
     padding-top: 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    height: 20em;
-    margin-left: 35%;
-    width: 30%;
+    height: 22em;
+    margin-left: 25%;
+    width: 50%;
     text-align: center;
     transition: scale 200ms;
  }
@@ -132,26 +80,8 @@ description: css for about.html, could be merged(?)
     margin: auto;
     width: fit-content;
     height: fit-content;
-    /* border: 2px solid #000000; */
-    /* border-radius: 1em; */
     clip-path: circle(45%);
 }
-/* .ProfileInfo {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
-    clear: both;
-}
-.ProfileMain {
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-}
-.ProfileSide {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 5em;
-    padding-left: 2em;
-    border-left: 2px solid #000000;
-} */
 .ProfileFunFacts table {
     margin: auto;
     background-color: var(--asora-warm-sand);
@@ -162,4 +92,9 @@ description: css for about.html, could be merged(?)
 .ProfileFunFacts table th:hover {
     color: var(--asora-stormy-sea);
     background-color: var(--asora-white);
+}
+#GroupPhoto figure img {
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 5em;
 }
