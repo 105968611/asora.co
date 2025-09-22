@@ -142,6 +142,8 @@ form { /* Section for user-data, email for Newsletter*/
   padding: 4px 4px 4px 6px;
   border-radius: 2.2rem;
   background-color: rgba(0, 0, 0, 0.15);
+  transition: 0.15s ease-in;
+  cursor: pointer;
 
   margin-left: 6px;
 }
