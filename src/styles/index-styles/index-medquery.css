@@ -11,9 +11,9 @@
 
   /* Page 1-Banner */
   .slogan-page1 {
-      font-size: 40px;
+      font-size: 1.5rem;
       width: 90%;
-      bottom: 100px;
+      bottom: 50px;
       left: 5%;
   }
 

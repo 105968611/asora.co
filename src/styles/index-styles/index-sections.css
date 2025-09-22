@@ -16,10 +16,12 @@
 /* Page 1 - Opening Banner*/
 .page-1 {
   position: relative;
+  
   }
 
   .bg1-page1 {
   width: 100%;	
+  margin-top: 3rem;
   }
 
   .slogan-page1 {
