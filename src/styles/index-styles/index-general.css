@@ -120,31 +120,30 @@ form { /* Section for user-data, email for Newsletter*/
 }
 
 .email-icon {
-    height: 32px;
-    width: 32px;
-    padding: 0 5px 0 0;
+  height: 1.8rem;
+  width: 2rem;
+  padding: 0 5px 0 0;
 }
 .email-textbox { /*Style for text placeholder */
-    color: #2c3a4b;
-    border: 1px solid rgb(44, 72, 83);
-    border-radius: 5px;
-    padding: 6px;
-    padding-right: 25px;
-    font-weight: 500;
-    font-size: 16px;
-    flex-grow: 1;
+  color: #2c3a4b;
+  border: 1px solid rgb(44, 72, 83);
+  border-radius: 5px;
+  padding: 6px;
+  padding-right: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  flex-grow: 1;
 
 }
 .submit-button { /* Submit button-icon style */
-    height: 12px;
-    width: 12px;
-    margin-left: 12px;
-    margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.15); /*Opacity background color*/
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.2s ease; /*Transition time for bg opacity */
+  height: 1.8rem;
+  width: 1.8rem;
+  text-align: center;
+  padding: 4px 4px 4px 6px;
+  border-radius: 2.2rem;
+  background-color: rgba(0, 0, 0, 0.15);
+
+  margin-left: 6px;
 }
 
 .submit-button:hover {  /*Opacity transition for Submit button  */

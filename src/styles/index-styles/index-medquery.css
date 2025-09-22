@@ -4,32 +4,27 @@
       padding-top: 50px;
   }
 
-  /* Nav Bar */
-  .right-section ul li {
-      margin-right: 20px;
-  }
-
   /* Page 1-Banner */
   .slogan-page1 {
-      font-size: 1.5rem;
-      width: 90%;
+      font-size: 2rem;
+      width: 50%;
       bottom: 50px;
-      left: 5%;
+      left: 24%;
   }
 
-  /* Page 2-About the Company */
+  /* Page 2-Company Mision */
   .page-2 {
       height: auto;
       padding: 50px 20px;
   }
 
   .page-2 h2 {
-      font-size: 30px;
+      font-size: 1.5rem;
   }
 
   .description-page2 {
       width: 90%;
-      font-size: 16px;
+      font-size: 14px;
   }
 
   /* Page 3&6-Banners */
@@ -43,6 +38,11 @@
       height: 500px;
   }
 
+  .careers-button-p3,
+  .careers-button-p6 {
+    transform: scale(0.8);
+  }
+
   /* Page 4-Why Work with Asora */
   .page-4 {
       flex-direction: column;
@@ -52,6 +52,14 @@
 
   .media-page4 {
       width: 100%;
+  }
+
+  .title-page4 {
+    font-size: 1.5rem;
+  }
+
+  .descrip-p4 {
+    font-size: 14px;
   }
 
   .page4-info {
@@ -72,6 +80,7 @@
   .page-5 h2 {
       margin: 40px 0 20px 20px;
       text-align: left;
+      font-size: 1.5rem;
   }
 
   .overall-row {
@@ -85,9 +94,14 @@
       width: 100%;
   }
 
+
+
+
+
+  
+
   /* Footer*/
   footer {
-      padding: 20px;
   }
 
   .footer-row {
@@ -121,15 +135,20 @@
   }
   
   .email-textbox {
-      width: 60%;
+      width: 50%;
   }
   
   .copyright-section {
       flex-direction: column;
       text-align: center;
+      transform: scale(.6);
   }
   
+  .left-content {
+    margin-bottom: 5em;
+  }
   .pp-tos-inclusion {
-      margin-top: 10px;
+      margin-top: 5px;
+      margin-bottom: 0;
   }
 }
