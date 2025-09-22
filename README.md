@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a><img src="./src/assets/Picture1.png" width="500"></a>
+    <a><img src="./src/images/logos/asora_readme_logo.png" width="500"></a>
     <p><i>Insight. Integrity. Innovation</i></p>
 </h1>
 
@@ -9,7 +9,7 @@
 <div style="display:flex; align-items:center;">
   <p>We are Australia’s dedicated agency for Data-Driven Innovation, helping government departments unlock the full value of their information assets. By combining strong data governance with advanced analytics, we enable evidence-based policy, streamlined digital services, and transparent decision-making that benefits every citizen.<p>
 
-  <img src= "./src/assets/image.png" width=120px >
+  <img src= "./src/images/logos/ausgov_white.png" width=120px >
 </div>
 
 ## Our Services

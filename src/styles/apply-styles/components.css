@@ -35,12 +35,15 @@ description: this file encapsulates component styles such as buttons, cards, for
   text-decoration: none;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
@@ -95,7 +98,7 @@ a {
   gap: 20px;
 }
 
-.logo_container  {
+.logo_container {
   display: flex;
   align-items: center;
   padding: 7px;
@@ -106,7 +109,7 @@ a {
   height: 30px;
 }
 
-.short_logo{
+.short_logo {
   display: none;
 }
 
@@ -133,11 +136,13 @@ a {
   border-radius: 6px;
 }
 
-#sidebar_active, .links_container{
+#sidebar_active,
+.links_container {
   display: none;
 }
 
-.open_sidebar_btn, .close_sidebar_btn{
+.open_sidebar_btn,
+.close_sidebar_btn {
   display: none;
 
 }
@@ -270,7 +275,7 @@ a {
   margin: 0;
 }
 
-.arrow_down{
+.arrow_down {
   height: 2rem;
 }
 
@@ -294,7 +299,7 @@ a {
   padding: 2.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; 
+  box-sizing: border-box;
 
 }
 
@@ -317,8 +322,8 @@ a {
 }
 
 .box_input:focus {
-  border-color: var(--asora-stormy-sea); 
-  box-shadow: 0 0 0 1px var(--asora-stormy-sea); 
+  border-color: var(--asora-stormy-sea);
+  box-shadow: 0 0 0 1px var(--asora-stormy-sea);
   outline: none;
 }
 
@@ -381,7 +386,7 @@ a {
 
 .submit_btn:hover {
   background-color: rgba(29, 38, 40, 0.9);
-}    
+}
 
 .reset_btn {
   background-color: var(--asora-rose-gray);
@@ -404,7 +409,7 @@ a {
 
 
 .vertical_radio {
-  column-count: 2;
+  width: 100%;
   column-gap: 20px;
   margin-top: 10px;
 }
@@ -415,9 +420,6 @@ a {
   font-size: 14px;
   break-inside: avoid;
 }
-
-
-
 
 /*RESPONSIVE DESIGN */
 
@@ -437,7 +439,7 @@ a {
     padding: 0 1rem;
   }
 
-  .nav_links{
+  .nav_links {
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -449,16 +451,29 @@ a {
     width: 300px;
     height: 100%;
     background-color: black;
+    transition: right 0.3s ease;
     box-shadow: -5px 0 5px rgb(150, 150, 150, 0.3);
     padding-top: 5px;
   }
 
+  .nav_links a,
+  .nav_links .dropdown {
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
   .nav_links a {
-    color:white ;
-    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 0;
+  }
+
+  .nav_links .dropdown .dropdown_title {
+    color: white;
     width: 100%;
     padding: 20px 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    display: block;
   }
 
   .nav_links a:hover {
@@ -466,37 +481,37 @@ a {
     color: white;
   }
 
-  .dropdown_title{
-    
+
+  .dropdown_menu {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 
-  .dropdown_menu{
-    display: none;
-  }
 
-
-  .open_sidebar_btn, .close_sidebar_btn{
+  .open_sidebar_btn,
+  .close_sidebar_btn {
     display: block;
     padding: 20px;
   }
 
 
-  #sidebar_active:checked ~ .nav_links{
+  #sidebar_active:checked~.nav_links {
     display: flex;
   }
 
-  .form_container{
+  .form_container {
     width: 100%;
-    box-shadow:none;
+    box-shadow: none;
     box-sizing: boarder_box;
     padding: 1rem;
   }
 
-  .box_input{
+  .box_input {
     width: 100%;
   }
 
-  .body_apply{
+  .body_apply {
     background-image: none
   }
 
@@ -540,9 +555,10 @@ a {
     gap: 1rem;
   }
 
-  .submit_btn, .reset_btn {
+  .submit_btn,
+  .reset_btn {
     width: 100%;
     padding: 1rem;
   }
-  
+
 }
