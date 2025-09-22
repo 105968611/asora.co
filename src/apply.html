@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply</title>
     <!--Link to CSS-->
-    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/components.css">
-    <link rel="stylesheet" href="./styles/layout.css">
     <!--Required Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +19,20 @@
     <header>
         <div class="navbar">
             <div class="logo_container">
-                <a href="index.html"><img src="./assets/asoratext_black_00000.png" alt="asora-logo"
-                        style="height: 30px;"></a>
+                <a href="index.html"><img src="./assets/asoratext_black_00000.png" alt="asora-logo" class="wide_logo"></a>
+                <a href="index.html"><img src="./images/asora_logo_black.png" alt="asora-logo"  class="short_logo"></a>
             </div>
-            <div class="nav_links">
+
+
+            <input type="checkbox" id="sidebar_active">
+            <label for="sidebar_active" class="open_sidebar_btn">
+                <img width="32" height="32" src="https://img.icons8.com/windows/32/1d2628/menu--v1.png" alt="menu--v1"/>
+            </label>
+            <div class="nav_links">              
+
+                    <label for="sidebar_active" class="close_sidebar_btn">
+                        <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/back.png" alt="back"/>
+                    </label>
                 <a href="index.html">Home</a>
                 <a href="jobs.html">Careers</a>
                 <div class="dropdown">
@@ -102,8 +110,7 @@
         </div>
 
         <div class="page_title">
-            <h1 style="display: flex; align-items: flex-end; gap: 20px;">Apply Now <img src="./assets/down-arrow.png"
-                    style="height: 4vh;" alt=""></h1>
+            <h1 >Apply Now <img src="./assets/down-arrow.png" class="arrow_down" alt=""></h1>
         </div>
     </div>
 
@@ -197,10 +204,9 @@
 
                 <!--Suburb Town-->
                 <div class="box_form">
-                    <label for="apl_suburb" class="box_label">Suburb/Town <span class="req">*</span>
-                        <input type="text" id="apl_suburb" class="box_input" maxlength="40" requried
-                            placeholder="Enter your suburb name">
-                    </label>
+                    <label for="apl_suburb" class="box_label">Suburb/Town <span class="req">*</span></label>
+                        <input type="text" id="apl_suburb" class="box_input" maxlength="40" requried placeholder="Enter your suburb name">
+                    
                 </div>
 
                 <!--State field-->
@@ -302,59 +308,6 @@
             </div>
         </form>
     </div>
-
-    <!--Footer-->
-    <footer>
-        <div class="footer-row">
-            <div class="footer-column">
-                <img class="logo-footer" src="images/asora_logo_black.png" alt="asora-logo">
-                <div class="separator"></div>
-                <h4>Email</h4>
-                <a class="email-id" href="mailto:info@asoraco.com.au">info@asoraco.com.au</a>
-                <h4>Phone</h4>
-                <p>1300 000 000</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Menu</h3>
-                <div class="separator"></div>
-                <ul class="menu-list">
-                    <li><a class="listing" href="index.html">Home</a></li>
-                    <li><a class="listing" href="jobs.html">Careers</a></li>
-                    <li><a class="listing" href="about.html">Our Team</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Newsletter</h3>
-                <div class="separator"></div>
-                <p class="info-newsletter"> Subscribe for more news and shit</p>
-                <form class="newsletter-userinput">
-                    <img class="email-icon" src="images/icons/email-icon.png" alt="email-icon">
-                    <input class="email-textbox" type="text" placeholder="Enter your Email">
-                    <div class="social-icons">
-                        <img class="submit-button" src="images/icons/submit-icon.svg" alt="submit">
-                        <div class="tooltip">Submit</div>
-                    </div>
-
-                </form>
-                <h3>Our Socials</h3>
-                <div class="separator"></div>
-                <form class="newletter-userinput social-media">
-                    <div class="social-icons">
-                        <a class="github-icon" href="#"><img src="images/icons/github-mark.svg" alt="GitHub"></a>
-                        <div class="tooltip">GitHub</div>
-                    </div>
-                    <div class="social-icons">
-                        <a class="jira-icon" href="#"><img src="images/icons/jira-logo.png"
-                                alt="Jira-Management-Logo"></a>
-                        <div class="tooltip">Jira Management</div>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-    </footer>
 </body>
 
 </html>
