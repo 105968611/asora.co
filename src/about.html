@@ -5,36 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <!--Link to CSS-->
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/components.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/about_overrides.css">
+    <link rel="stylesheet" href="styles/apply-styles/global.css">
+    <link rel="stylesheet" href="styles/apply-styles/components.css">
+    <link rel="stylesheet" href="styles/apply-styles/layout.css">
+    <link rel="stylesheet" href="styles/about-styles/about_overrides.css">
+
+    <link rel="stylesheet" href="styles/index-styles/index-general.css">
     <!--Required Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="about">
-
     <header>
         <div class="navbar">
-        <a href="index.html" class="nav_logo"><img src="./media/asora logo 3.png" alt="asora logo"></a>
-        <div class="nav_links">
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Careers</a>
-            <a href="about.html">Our Team</a>
+            <div class="logo_container">
+                <a href="index.html"><img src="./images/logos/asoratext_black.png" alt="asora-logo" class="wide_logo"></a>
+                <a href="index.html"><img src="./images/logos/asora_logo_black.png" alt="asora-logo"  class="short_logo"></a>
+            </div>
+
+
+            <input type="checkbox" id="sidebar_active">
+            <label for="sidebar_active" class="open_sidebar_btn">
+                <img width="32" height="32" src="https://img.icons8.com/windows/32/1d2628/menu--v1.png" alt="menu--v1"/>
+            </label>
+            <div class="nav_links">              
+
+                    <label for="sidebar_active" class="close_sidebar_btn">
+                        <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/back.png" alt="back"/>
+                    </label>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Careers</a>
+                <div class="dropdown">
+                    <a href="about.html" class="dropdown_title">Our Team</a>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_heading">Meet the team</li>
+                        <hr style="width: 80%;">
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32"
+                                    src="https://img.icons8.com/windows/32/code.png" alt="code" />
+                                <div class="member_info">
+                                    <span class="member_name">Meet Hannah</span>
+                                    <span class="role_member">Web Developer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16"
+                                        src="https://img.icons8.com/windows/32/long-arrow-right.png"
+                                        alt="long-arrow-right" /></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32"
+                                    src="https://img.icons8.com/windows/32/data-configuration.png"
+                                    alt="data-configuration" />
+                                <div class="member_info">
+                                    <span class="member_name">Meet Isabela</span>
+                                    <span class="role_member">Data Engineer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16"
+                                        src="https://img.icons8.com/windows/32/long-arrow-right.png"
+                                        alt="long-arrow-right" /></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32"
+                                    src="https://img.icons8.com/windows/32/code.png" alt="code" />
+                                <div class="member_info">
+                                    <span class="member_name">Meet Nathan</span>
+                                    <span class="role_member">Web Developer</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16"
+                                        src="https://img.icons8.com/windows/32/long-arrow-right.png"
+                                        alt="long-arrow-right" /></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="team_member">
+                                <img class="member_icon" width="32" height="32"
+                                    src="https://img.icons8.com/windows/32/combo-chart.png" alt="combo-chart" />
+                                <div class="member_info">
+                                    <span class="member_name">Meet Joseph</span>
+                                    <span class="role_member">Data Analyst</span>
+                                </div>
+                                <span class="hover_icon"><img width="16" height="16"
+                                        src="https://img.icons8.com/windows/32/long-arrow-right.png"
+                                        alt="long-arrow-right" /></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        </div> 
+
     </header>
-    <aside id="studentids">
-        <p>105916830 <br/>
-        105421813 <br/>
-        105968611 <br/>
-        106100304</p>
-    </aside>
-    <h1>Meet our Team</h1>
-    <section class="aboutSections" id="GroupInfo">
-        <p>Learn more about our team: </p>
+
+    <h1 id="AboutPageTitle">Meet our Team</h1>
+    <!-- Section containing basic group information, consisting of the group name and class day/time -->
+    <section class="aboutSections" id="GroupInfo" style="text-align: left;">
+        <p>Learn more about our team</p>
         <ul>
             <li>Group name: Employment Final Boss
                 <ul>
@@ -44,67 +117,399 @@
             </li>
         </ul>
     </section>
+    
+    <!-- Section for all member profiles, both short and extended -->
     <section class="aboutSections" id="MemberInfo">
-        <div class="AboutLeftMembers" id="AboutNathan">
-            <p>n</p>
-        </div> <br/>
-        <div class="AboutLeftMembers" id="AboutHannah">
-            <p>H</p>
+        <div class="AboutProfiles">
+            <!-- Brief profiles to introduce each member, expands with details on hover -->
+            <div class="AllMembers">
+                <div class="AboutMembers" id="Nathan">
+                    <div class="ProfileHead">
+                        <div class="ProfileTop">
+                            <div class="ProfileImage">
+                                <img src="images/profiles/Nathan.jpg" alt="Picture of Nathan" height="175" width="175"/>
+                            </div>
+                            <div class="ProfileStudentID">
+                                <p>105916830</p>
+                            </div>
+                        </div>
+                        <div class="ProfileMid">
+                            <div class="ProfileName">
+                                <h2>Nathan Vuong</h2>
+                            </div>
+                            <div class="ProfileTitle">
+                                <h3>Web Developer</h3>
+                            </div>
+                            <div class="ProfileQuote">
+                                <p><em>"When the soldiers stand leaning on their spears, they are faint from want of food." - Sun Tzu</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProfileInfo">
+                        <div class="ProfileMain">
+                            <div class="ProfileDescription">
+                                <dl>
+                                    <dt><strong>Description</strong></dt>
+                                    <dd>I love studying psychology, which was also my best subject in VCE. I enjoy volleyball and video games.</dd>
+                                    <dt><strong>Contributions</strong></dt>
+                                    <dd>I worked on this page, attended all meetings and made updates to my branch.</dd>
+                                    <dt><strong>First or Favourite Language</strong></dt>
+                                    <dd>My first and only language is English, however when I was younger I wanted to learn French.</dd>
+                                    <dt><strong>Favourite Meme</strong></dt>
+                                    <dd><img src="./images/profiles/NathanMeme.jpg" alt="Nathan's favourite meme"/></dd>
+                                    <dt><strong>LinkedIn</strong></dt>
+                                    <dd><a href="https://www.example.com" title="Click to go to my LinkedIn page">N/A</a></dd>
+                                    <dt></dt>
+                                </dl>
+                            </div>
+                            
+                        </div>
+                        <div class="ProfileSide">
+                            <div class="ProfileFunFacts">
+                                <table>
+                                    <caption>Table of fun facts!</caption>
+                                    <tr>
+                                        <th><strong>Fun Facts</strong></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 1:</td>
+                                        <td>I have superhuman hearing but also tinnitus. &lpar;I took a hearing test&rpar;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 2:</td>
+                                        <td>I don't like chocolate.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 3:</td>
+                                        <td>My dream job is no job, hopefully with enough investments to generate income.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 4:</td>
+                                        <td>My go&#8208;to snacks are generally lollies.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 5:</td>
+                                        <td>I lived in Sunshine and was born in Carlton.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 6:</td>
+                                        <td>I'm a mediocre guitarist.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ProfileHobbies">
+                                <h3>Hobbies</h3>
+                                <p>My hobbies include playing guitar, cosplay and gaming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="AboutMembers" id="Hannah">
+                    <div class="ProfileHead">
+                        <div class="ProfileTop">
+                            <div class="ProfileImage">
+                                <img src="images/profiles/Hannah.png" alt="Picture of Hannah" height="175" width="175"/>
+                            </div>
+                            <div class="ProfileStudentID">
+                                <p>105421813</p>
+                            </div>
+                        </div>
+                        <div class="ProfileMid">
+                            <div class="ProfileName">
+                                <h2>Hannah Nicolete Abuan</h2>
+                            </div>
+                            <div class="ProfileTitle">
+                                <h3>Web Developer</h3>
+                            </div>
+                            <div class="ProfileQuote">
+                                <p><em>"6. 7." - Anonymous</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProfileInfo">
+                        <div class="ProfileMain">
+                            <div class="ProfileDescription">
+                                <dl>
+                                    <dt><strong>Description</strong></dt>
+                                    <dd>I enjoy spending most of my time at home, either working on personal projects, gaming or reading comics, though occasionally enjoy going out to op-shop or go to the beach.</dd>
+                                    <dt><strong>Contributions</strong></dt>
+                                    <dd>I am the team manager, responsible for assisting our team leader, Bela, with weekly tasks preparation and arranging team meetings. My contribution also include leading the brand design and wireframing as we established the company.</dd>
+                                    <dt><strong>First or Favourite Language</strong></dt>
+                                    <dd>My first language was Ilocano, a dialect in my home country in the North of the Philippines.</dd>
+                                    <dt><strong>Favourite Meme</strong></dt>
+                                    <dd><img src="./images/profiles/HannahMeme.jpg" alt="Hannah's favourite meme"/></dd>
+                                    <dt><strong>LinkedIn</strong></dt>
+                                    <dd><a href="https://www.linkedin.com/in/hannah-abuan-972bb7355" title="Click to go to my LinkedIn page">LinkedIn page.</a></dd>
+                                    <dt></dt>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="ProfileSide">
+                            <div class="ProfileFunFacts">
+                                <table>
+                                    <caption>Table of fun facts!</caption>
+                                    <tr>
+                                        <th><strong>Fun Facts</strong></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 1:</td>
+                                        <td>I like to hop on random trams and see where it takes me</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 2:</td>
+                                        <td>Once you get to know me my vocabulary expands to brainrot which I find not a lot of people get the reference, understably.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 3:</td>
+                                        <td>I've watched Kung Panda more than 100 times.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 4:</td>
+                                        <td>I don't have a dream job since I'm still contemplating whether to take the STEM or creative route hence doing a double degree &lpar;Computer Science &lpar;Cybersecurity&rpar; &amp; Games Interactivity&rpar;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 5:</td>
+                                        <td>I have a massive Final Fantasy figure collection.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ProfileHobbies">
+                                <h3>Hobbies</h3>
+                                <ul>
+                                    <li>VFX & GFX editing</li>
+                                    <li>Animating</li>
+                                    <li>Reading &lpar;Light Novels and Chinese comics mainly&rpar;</li>
+                                    <li>Doom scrolling on tiktok</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="AboutMembers" id="Joseph">
+                    <div class="ProfileHead">
+                        <div class="ProfileTop">
+                            <div class="ProfileImage">
+                                <img src="images/profiles/Joseph.png" alt="Picture of Joseph" height="175" width="175"/>
+                            </div>
+                            <div class="ProfileStudentID">
+                                <p>106100304</p>
+                            </div>
+                        </div>
+                        <div class="ProfileMid">
+                            <div class="ProfileName">
+                                <h2>Joseph Peter Chirayath</h2>
+                            </div>
+                            <div class="ProfileTitle">
+                                <h3>Data Analyst</h3>
+                            </div>
+                            <div class="ProfileQuote">
+                                <p><em>"देखो किसे अनुवादक की जरूरत है!" - Gandhi</em></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="ProfileInfo">
+                        <div class="ProfileMain">
+                            <div class="ProfileDescription">
+                                <dl>
+                                    <dt><strong>Description</strong></dt>
+                                    <dd>I love playing sports with mates and slow mornings.</dd>
+                                    <dt><strong>Contributions</strong></dt>
+                                    <dd>I worked on the jobs page and attended meetings along with making updates to my branch.</dd>
+                                    <dt><strong>First or Favourite Language</strong></dt>
+                                    <dd>I speak 2 languages English and Malayalam. I can understand Tamil (3rd Lang). I also used to know how to read and write Hindi. First language is English.</dd>
+                                    <dt><strong>Favourite Meme</strong></dt>
+                                    <dd><img src="./images/profiles/JosephMeme.png" alt="Joseph's favourite meme"/></dd>
+                                    <dt><strong>LinkedIn</strong></dt>
+                                    <dd><a href="https://www.example.com" title="Click to go to my LinkedIn page">N/A</a></dd>
+                                    <dt></dt>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="ProfileSide">
+                            <div class="ProfileFunFacts">
+                                <table>
+                                    <caption>Table of fun facts!</caption>
+                                    <tr>
+                                        <th><strong>Fun Facts</strong></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 1:</td>
+                                        <td>I played basketball for a club</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 2:</td>
+                                        <td>I went state-level for 100m dash</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 3:</td>
+                                        <td>I got top 5&#37; in the JEE exam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 4:</td>
+                                        <td>Made it to TOM semi-finals</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 5:</td>
+                                        <td>I was born in Derby UK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 6:</td>
+                                        <td>I'm Indian</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ProfileHobbies">
+                                <h3>Hobbies</h3>
+                                <p>I like basketball</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="AboutMembers" id="Bela">
+                    <div class="ProfileHead">
+                        <div class="ProfileTop">
+                            <div class="ProfileImage">
+                                <img src="./images/profiles/Isabela.jpg" alt="Picture of Bela" height="175" width="175"/>
+                            </div>
+                            <div class="ProfileStudentID">
+                                <p>105968611</p>
+                            </div>
+                        </div>
+                        <div class="ProfileMid">
+                            <div class="ProfileName">
+                                <h2>Isabela Gaviria Rua</h2>
+                            </div>
+                            <div class="ProfileTitle">
+                                <h3>Data Engineer</h3>
+                            </div>
+                            <div class="ProfileQuote">
+                                <p><em>"Al mal tiempo buena cara" - Anonymous</em> <br/>
+                                Translated: <em>"In bad times, a good face"</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProfileInfo">
+                        <div class="ProfileMain">
+                            <div class="ProfileDescription">
+                                <dl>
+                                    <dt><strong>Description</strong></dt>
+                                    <dd>I'm a passionate computer science student with a focus on software development and data analysis. Passionate about crafting clean solutions, documenting processes, and supporting teammates from concept to delivery.</dd>
+                                    <dt><strong>Contributions</strong></dt>
+                                    <dd>Led the development strategy and managed the GitHub repo while collaborating with teammates to deliver the final product. Contributed to the apply form, documentation, resource sharing, and assisted others throughout the project.</dd>
+                                    <dt><strong>First or Favourite Language</strong></dt>
+                                    <dd>Language goes here.</dd>
+                                    <dt><strong>Favourite Meme</strong></dt>
+                                    <dd><img src="./images/profiles/IsabelaMeme.jpg" alt="Bela's favourite meme"/></dd>
+                                    <dt><strong>LinkedIn</strong></dt>
+                                    <dd><a href="https://www.linkedin.com/in/isagav/" title="Click to go to my LinkedIn page">LinkedIn page.</a></dd>
+                                    <dt></dt>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="ProfileSide">
+                            <div class="ProfileFunFacts">
+                                <table>
+                                    <caption>Table of fun facts!</caption>
+                                    <tr>
+                                        <th><strong>Fun Facts</strong></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 1:</td>
+                                        <td>I love learning, its my favorite way to spend time and discover new ideas. </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 2:</td>
+                                        <td>I have an expensive setup but I sleep on the floor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fact 3:</td>
+                                        <td>I want to be a founder and CTO in some point.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ProfileHobbies">
+                                <h3>Hobbies</h3>
+                                <p>I watch youtube videos 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="AboutRightMembers" id="AboutJoseph">
-            <p>J</p>
-        </div>
-        <div class="AboutRightMembers" id="AboutBela">
-            <p>B</p>
-        </div>
-        <!-- <dl>
-            <dt>Nathan</dt>
-            <dd>Info goes here</dd>
-            <dt>Hannah</dt>
-            <dd>Info goes here</dd>
-            <dt>Joseph</dt>
-            <dd>Info goes here</dd>
-            <dt>Bela</dt>
-            <dd>Info goes here</dd>
-        </dl> -->
     </section>
+    <!-- Section containing the group photo, emphasizing team collaboration -->
     <section class="aboutSections" id="GroupPhoto">
         <figure>
-            <img src="images/GroupPhoto.png" alt="Group Photo of Employment Final Boss Members" style="border:3px solid black"/>
+            <img src="images/group-img/" alt="Group Photo of Employment Final Boss Members"/>
             <figcaption>Photo of our team members</figcaption>
         </figure>
     </section>
-    <section class="aboutSections" id="FunFacts">
-        <table id="FunFactsTable">
-            <caption>Table of fun facts!</caption>
-            <tr>
-                <th><strong>Fun Facts</strong></th>
-            </tr>
-            <tr>
-                <td>Fact 1:</td>
-                <td>factgoeshere</td>
-            </tr>
-            <tr>
-                <td>Fact 2:</td>
-                <td>factgoeshere</td>
-            </tr>
-            <tr>
-                <td>Fact 3:</td>
-                <td>factgoeshere</td>
-            </tr>
-            <tr>
-                <td>Fact 4:</td>
-                <td>factgoeshere</td>
-            </tr>
-            <tr>
-                <td>Fact 5:</td>
-                <td>factgoeshere</td>
-            </tr>
-            <tr>
-                <td>Fact 6:</td>
-                <td>factgoeshere</td>
-            </tr>
-        </table>
-    </section>
+
+  
+    <!--Footer Creds/Made by Hannah-->
+		<footer>
+			<div class="footer-row">
+				<div class="footer-column">
+					<a href="index.html"><img class="logo-footer" src="images/logos/asoratext_black.png" alt="asora-logo"></a>
+					<div class="separator"></div>
+					<h4>Email</h4>
+					<a class="email-id" href="mailto:info@asoraco.com.au">info@asoraco.com.au</a>
+					<h4>Phone</h4>
+					<p>1300 000 000</p>			
+				</div>
+
+				<div class="footer-column">
+					<h3>Menu</h3>
+					<div class="separator"></div>
+					<ul class="menu-list">
+						<li><a class="listing" href="index.html">Home</a></li>
+						<li><a class="listing" href="jobs.html">Careers</a></li>
+						<li><a class="listing" href="about.html">Our Team</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-column">
+					<h3>Newsletter</h3>
+					<div class="separator"></div>
+					<p class="info-newsletter"> Subscribe to our newsletter for upcoming events!</p>
+					<form class="newsletter-userinput">
+						<img class="email-icon" src="images/icons/email-icon.png" alt="email-icon">
+						<input class="email-textbox" type="text" placeholder="Enter your Email">
+						<div class="social-icons">
+							<img class="submit-button" src="images/icons/submit-icon.svg" alt="submit">
+							<div class="tooltip">Submit</div>
+						</div>
+					</form>
+
+					<h3>Our Socials</h3>
+					<div class="separator"></div>
+					<form class="social-media">
+						<div class="social-icons">
+							<a class="github-icon" href="#"><img src="images/icons/github-mark.svg" alt="GitHub"></a>
+							<div class="tooltip">GitHub</div>
+						</div>
+						<div class="social-icons">
+							<a class="jira-icon" href="#"><img src="images/icons/jira-logo.png" alt="Jira-Management-Logo"></a>
+						<div class="tooltip">Jira Management</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<hr>
+			<!--Copyright Section-->
+			<div class="copyright-section">
+				<div class="left-content">
+				<img class="gov-logo" src="images/icons/aus-gov-logo.png" alt="aus-gov-logo">
+				<p class="right-reserve-text">&copy; 2025 Asora.Co All Rights Reserved.</p>
+				</div>
+				<div class="pp-tos-inclusion">
+					<a href="#" class="hover:text-white transition duration-300">Privacy Policy</a> |
+          <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+        </div>
+			</div>
+
+		</footer>
 </body>
 </html>

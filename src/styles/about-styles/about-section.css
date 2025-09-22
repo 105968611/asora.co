@@ -1,0 +1,126 @@
+ :root {
+  /*asora colors*/
+  --asora-white: #fff;
+  --asora-warm-sand:#dcd4ca;
+  --asora-rose-gray:#c2b5b4;
+  --asora-dusty-lavander: #948e98;
+  --asora-ash-grape: #696772;
+  --asora-stormy-sea: #2c4853;
+  --asora-onyx-green: #1d2628;
+}
+
+.column-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 50rem;
+  margin: 0 auto;
+ 
+    /*
+  background-image: radial-gradient(var(--asora-ash-grape) 1px, transparent 0);
+  background-size: 3rem 3rem;
+  background-position: -19px -19px; */
+
+  margin-top: 10rem;
+}
+
+.about-team-section {
+  margin-top: 10rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.user-picture {
+  width: 10em;
+  clip-path: circle();
+}
+
+.profile-card-content { /* Look of the entire profile cards*/
+  background-color: var(--asora-white);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+
+.profile-card-content:hover { /*Hover transition- Expands/Scales card, add box-shadow & border */
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-color: #6366f1;
+  z-index: 10;
+}
+
+.expanded-card-content { /*Expanded content look- Hidden */
+  /* Height & Opacity set to 0 to hide expanded content + transition*/
+  max-height: 0;
+  opacity: 0; 
+  overflow: hidden; /* Hides content*/
+  transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out;
+  align-self: stretch;
+  text-align: left;
+}
+
+.profile-card-content:hover .expanded-card-content { /* Hover animation for expanded content card*/
+  max-height: 120rem;
+  opacity: 1;
+  padding-top: 1.5rem;
+}
+
+.fun-fact-table th {
+  color: black;
+}
+
+.fun-fact-table {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(83, 83, 83);
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+.fun-fact-content {
+  background-color: rgb(246, 246, 246);
+  border-radius: .5rem;
+  padding: 4px;
+  transition: 0.15s ease-in;
+}
+
+.fun-fact-content:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.user-meme-pic {
+  width: 35%;
+}
+
+.linked-in { /* LinkedIn style container*/
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.linked-in-logo {
+  width: 6em;
+}
+
+.linked-in a { /* Style social media link*/
+  transition: 0.2s ease; 
+  height: 5vh;
+}
+
+.linked-in a:hover { /* Changes icons on hover*/
+  transform: scale(1.25);
+}
