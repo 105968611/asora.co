@@ -8,39 +8,93 @@ contributors: Nathan
 
 created: 16 September 2025
 
-last modified: 16/09/25
+last modified: 21/09/25
 
 description: css for about.html, could be merged(?)
 
 */
-h1 {
+:root{
+  /*asora colors*/
+  --asora-white: #fff;
+  --asora-warm-sand:#dcd4ca;
+  --asora-rose-gray:#c2b5b4;
+  --asora-dusty-lavander: #948e98;
+  --asora-ash-grape: #696772;
+  --asora-stormy-sea: #2c4853;
+  --asora-onyx-green: #1d2628;
+}
+#AboutPageTitle {
+    text-align: center;
+    margin-top: 150px;
+}
+#GroupInfo p {
     text-align: center;
 }
 .aboutSections {
-    padding-left: 10%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+.MiniName, .ProfileName {
+    font-weight: 500;
+}
+ .AllMembers {
+    display: grid;
+    row-gap: 2em;
+ }
+ .AboutMembers {
+    background-color: var(--asora-white);
+    border: 2px solid var(--asora-dusty-lavander);
+    border-radius: 15px;
+    padding: 1%;
+    padding-top: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 22em;
+    margin-left: 25%;
     width: 50%;
-    margin:auto;
+    text-align: center;
+    transition: scale 200ms;
+ }
+ .AboutMembers:hover {
+    height: max-content;
+    scale: 1.07;
+ }
+ .AboutMembers:hover .ProfileInfo {
+    opacity: 100;
+ }
+ .ProfileTop {
+    margin: auto;
+    display: flex;
+    margin-left: 5em;
+ }
+ .ProfileStudentID {
+    text-align: right;
+ }
+.ProfileInfo {
+    opacity: 0;
+    overflow: hidden;
 }
-.aboutSections div {
-    
+.ProfileImage, .MiniProfileImage {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    clip-path: circle(45%);
 }
-.AboutLeftMembers {
-    float: left;
+.ProfileFunFacts table {
+    margin: auto;
+    background-color: var(--asora-warm-sand);
 }
-.AboutRightMembers {
-    float: right;
+.ProfileFunFacts table tr:hover {
+    background-color: var(--asora-white);
 }
-#studentids {
-    float: right;
+.ProfileFunFacts table th:hover {
+    color: var(--asora-stormy-sea);
+    background-color: var(--asora-white);
 }
-#FunFacts {
-    width: max-content;
-    background-color: #c3c3c3;
-}
-#FunFacts tr:hover {
-    background-color: #ffffff;
-}
-#FunFacts th:hover {
-    color: #ffffff;
-    background-color: #494949;
+#GroupPhoto figure img {
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 5em;
 }
