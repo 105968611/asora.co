@@ -13,55 +13,73 @@ last modified: 21/09/25
 description: css for about.html, could be merged(?)
 
 */
+:root{
+  /*asora colors*/
+  --asora-white: #fff;
+  --asora-warm-sand:#dcd4ca;
+  --asora-rose-gray:#c2b5b4;
+  --asora-dusty-lavander: #948e98;
+  --asora-ash-grape: #696772;
+  --asora-stormy-sea: #2c4853;
+  --asora-onyx-green: #1d2628;
+}
 #AboutPageTitle {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 150px;
+}
+#GroupInfo p {
+    text-align: center;
 }
 .aboutSections {
     width: 90%;
     margin: 0 auto;
     clear: both;
 }
-.AboutProfiles {
+/* .AboutProfiles {
     display: grid;
     grid-template-rows: 1fr 7fr;
     row-gap: 5em;
+} */
+.MiniName, .ProfileName {
+    font-weight: 500;
 }
-.MembersBrief {
+/* .MembersBrief {
+    width: 60%;
+    padding-left: 20%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 1em;
-    column-gap: 2em;
-}
-.AboutBrief {
+    column-gap: 1em;
+} */
+/* .AboutBrief {
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 1fr;
     border: 2px solid #000000;
     border-radius: 1em;
     padding: 1%;
-    background-color: #7f7f7f;
-}
-.MiniProfileRight {
+    background-color: var(--asora-white);
+} */
+/* .MiniProfileRight {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0fr;
 }
 .MiniTop {
     display: grid;
     grid-template-columns: 4fr 1fr;
-}
-.AllMembers {
+} */
+/* .AllMembers {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 2em;
 }
 .AboutMembers {
     display: grid;
-    grid-template-rows: 2fr 8fr;
+    grid-template-rows: 1fr 4fr;
     border: 2px solid #000000;
     border-radius: 1em;
     padding: 1%;
-    background: #7f7f7f;
+    background: var(--asora-white);
 }
 .ProfileHead {
     display: grid;
@@ -72,14 +90,53 @@ description: css for about.html, could be merged(?)
 .ProfileTop {
     display: grid;
     grid-template-rows: 1fr 1fr;
+} */
+ .AllMembers {
+    display: grid;
+    row-gap: 2em;
+ }
+ .AboutMembers {
+    background-color: var(--asora-white);
+    border: 2px solid var(--asora-dusty-lavander);
+    border-radius: 15px;
+    padding: 1%;
+    padding-top: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 20em;
+    margin-left: 35%;
+    width: 30%;
+    text-align: center;
+    transition: scale 200ms;
+ }
+ .AboutMembers:hover {
+    height: max-content;
+    scale: 1.07;
+ }
+ .AboutMembers:hover .ProfileInfo {
+    opacity: 100;
+ }
+ .ProfileTop {
+    margin: auto;
+    display: flex;
+    margin-left: 5em;
+ }
+ .ProfileStudentID {
+    text-align: right;
+ }
+.ProfileInfo {
+    opacity: 0;
+    overflow: hidden;
 }
 .ProfileImage, .MiniProfileImage {
+    margin: auto;
     width: fit-content;
     height: fit-content;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     /* border-radius: 1em; */
+    clip-path: circle(45%);
 }
-.ProfileInfo {
+/* .ProfileInfo {
     display: grid;
     grid-template-columns: 7fr 3fr;
     clear: both;
@@ -94,15 +151,15 @@ description: css for about.html, could be merged(?)
     row-gap: 5em;
     padding-left: 2em;
     border-left: 2px solid #000000;
-}
+} */
 .ProfileFunFacts table {
-    /* width: max-content; */
-    background-color: #c3c3c3;
+    margin: auto;
+    background-color: var(--asora-warm-sand);
 }
 .ProfileFunFacts table tr:hover {
-    background-color: #ffffff;
+    background-color: var(--asora-white);
 }
 .ProfileFunFacts table th:hover {
-    color: #ffffff;
-    background-color: #494949;
+    color: var(--asora-stormy-sea);
+    background-color: var(--asora-white);
 }
