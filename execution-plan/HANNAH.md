@@ -20,13 +20,13 @@
 
 - [✅] Make Execution Plan/Roadmap
 
-- [ ] Started Foundation "Coding" on all html files
+- [✅] Started Foundation "Coding" on all html files
 
 ## Week 6 (Sept 8th-14th)
 
 #### Tasks
 
-- [ ] Homepage HTML at least 80% completed
+- [📝] Homepage HTML at least 80% completed
 - [ ] About Page HTML at least 65%-70% completed
 - [ ] Started Impleting that all HTML coincide with one another
 
