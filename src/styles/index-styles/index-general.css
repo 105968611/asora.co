@@ -62,6 +62,17 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 /* Footer- Column/Row Section*/
 
@@ -184,8 +195,7 @@ form { /* Section for user-data, email for Newsletter*/
 }
 
 .submit-button:hover {  /*Opacity transition for Submit button  */
-    height: 15px;
-    width: 15px;
+    transform: scale(1.15);
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -210,12 +220,11 @@ form { /* Section for user-data, email for Newsletter*/
 }
 
 .github-icon { 
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .social-media img:hover { /*Size transition */
-    height: 38px;
-    width: 38px;
+    transform: scale(1.15);
 }
 
 .social-icons {
