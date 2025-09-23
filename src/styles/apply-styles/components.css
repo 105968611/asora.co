@@ -423,14 +423,7 @@ a {
 
 /*RESPONSIVE DESIGN */
 
-
-@media (max-width: 768px) {
-  .nav_links {
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 780px) {
 
 
   .navbar {
