@@ -1,0 +1,10 @@
+/*LAYOUT CSS- 
+
+  Containing layout rules*/
+
+/*Applied to ALL html*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
