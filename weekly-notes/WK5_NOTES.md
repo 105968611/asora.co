@@ -42,7 +42,7 @@
 	- Visual elements
 
 **To-Do:**
-- [ ] Start or/and improve HTML skeleton—Deadline: Thursday Week 6.
+- [x] Start or/and improve HTML skeleton—Deadline: Thursday Week 6.
   
 
 ## Isabela

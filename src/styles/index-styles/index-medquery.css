@@ -1,0 +1,155 @@
+@media (max-width: 768px) {
+  /* General */
+  body {
+      padding-top: 50px;
+  }
+
+  /* Page 1-Banner */
+  .slogan-page1 {
+      font-size: 2rem;
+      width: 50%;
+      bottom: 50px;
+      left: 24%;
+  }
+
+  /* Page 2-Company Mision */
+  .page-2 {
+      height: auto;
+      padding: 50px 20px;
+  }
+
+  .page-2 h2 {
+      font-size: 1.5rem;
+  }
+
+  .description-page2 {
+      width: 90%;
+      font-size: 14px;
+  }
+
+  /* Page 3&6-Banners */
+  .topic-page3,
+  .topic-page6 {
+      font-size: 35px;
+      width: 90%;
+  }
+  
+  .page-3, .page-6 {
+      height: 500px;
+  }
+
+  .careers-button-p3,
+  .careers-button-p6 {
+    transform: scale(0.8);
+  }
+
+  /* Page 4-Why Work with Asora */
+  .page-4 {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 20px;
+  }
+
+  .media-page4 {
+      width: 100%;
+  }
+
+  .title-page4 {
+    font-size: 1.5rem;
+  }
+
+  .descrip-p4 {
+    font-size: 14px;
+  }
+
+  .page4-info {
+      width: 100%;
+      margin: 20px 0 0;
+  }
+
+  .display-img-p4 {
+      width: 100%;
+  }
+  
+  /* Page 5-Life at Asora */
+  .page-5 {
+      height: auto;
+      padding-bottom: 50px;
+  }
+
+  .page-5 h2 {
+      margin: 40px 0 20px 20px;
+      text-align: left;
+      font-size: 1.5rem;
+  }
+
+  .overall-row {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px;
+  }
+
+  .box-p5 {
+      height: 350px;
+      width: 100%;
+  }
+
+
+
+
+
+  
+
+  /* Footer*/
+  footer {
+  }
+
+  .footer-row {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+  }
+  
+  .footer-column {
+      flex-basis: 100%;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  .footer-column ul {
+      text-align: center;
+  }
+  
+  .footer-column a, .footer-column p {
+      padding: 5px;
+  }
+  
+  form {
+      justify-content: center;
+  }
+  
+  .social-media {
+      justify-content: center;
+  }
+  
+  .email-textbox {
+      width: 50%;
+  }
+  
+  .copyright-section {
+      flex-direction: column;
+      text-align: center;
+      transform: scale(.6);
+  }
+  
+  .left-content {
+    margin-bottom: 5em;
+  }
+  .pp-tos-inclusion {
+      margin-top: 5px;
+      margin-bottom: 0;
+  }
+  
+}
