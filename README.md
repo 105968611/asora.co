@@ -8,8 +8,18 @@
 
 <div style="display:flex; align-items:center;">
   <p>We are Australia’s dedicated agency for Data-Driven Innovation, helping government departments unlock the full value of their information assets. By combining strong data governance with advanced analytics, we enable evidence-based policy, streamlined digital services, and transparent decision-making that benefits every citizen.<p>
+</div>
 
-  <img src= "./src/images/logos/ausgov_white.png" width=120px >
+<br>
+
+<div align="center">
+  <img src="./src/images/logos/asora_product.png" >
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./src/images/logos/ausgov_white.png" width=200px >
 </div>
 
 ## Our Services
@@ -22,7 +32,6 @@
 
 💡 Innovation & Capability Building
 
-### 
 
 ## Contributors
 <table align="center">
@@ -36,3 +45,6 @@
   </tbody>
 <table>
 <br>
+
+
+
