@@ -4,9 +4,13 @@
 body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: none;
-  background-color:rgb(246, 246, 246); 
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(251, 251, 251);
+  background-image: radial-gradient(#d7dae0 1px, transparent 1px);
+  background-size: 16px 16px;
 }
+
 
 :root {
   /*asora colors*/
