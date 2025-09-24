@@ -54,6 +54,7 @@
 
 .sub-heading-team li, ul {
   font-size: 14px;
+  list-style: none;
 }
 .sub-heading-team hr {
   border: none;
