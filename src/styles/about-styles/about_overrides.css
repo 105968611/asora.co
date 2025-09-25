@@ -8,7 +8,7 @@ contributors: Nathan
 
 created: 16 September 2025
 
-last modified: 21/09/25
+last modified: 25/09/25
 
 description: css for about.html, could be merged(?)
 
@@ -94,7 +94,7 @@ description: css for about.html, could be merged(?)
     clip-path: circle(45%);
 }
 
-/* table formatting */
+/* table formatting, coloured cells and hover effects */
 
 .ProfileFunFacts table {
     margin: auto;
