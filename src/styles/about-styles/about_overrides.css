@@ -23,6 +23,9 @@ description: css for about.html, could be merged(?)
   --asora-stormy-sea: #2c4853;
   --asora-onyx-green: #1d2628;
 }
+
+/* basic page format */
+
 #AboutPageTitle {
     text-align: center;
     margin-top: 150px;
@@ -40,10 +43,12 @@ description: css for about.html, could be merged(?)
     font-weight: 500;
 }
  .AllMembers {
+    /* spacing between member cards */
     display: grid;
     row-gap: 2em;
  }
  .AboutMembers {
+    /* basic format for all member cards, animated to increase and reveal additional details on hover */
     background-color: var(--asora-white);
     border: 2px solid var(--asora-dusty-lavander);
     border-radius: 15px;
@@ -57,34 +62,48 @@ description: css for about.html, could be merged(?)
     text-align: center;
     transition: scale 200ms;
  }
+ .ProfileInfo {
+    /* hide details, to be shown on hover */
+    opacity: 0;
+    overflow: hidden;
+ }
  .AboutMembers:hover {
+    /* increase size and height of box and on hover */
     height: max-content;
     scale: 1.07;
  }
  .AboutMembers:hover .ProfileInfo {
+    /* reveal details on hover */
     opacity: 100;
  }
  .ProfileTop {
+    /* formatting image and student id in the box */
     margin: auto;
     display: flex;
     margin-left: 5em;
  }
  .ProfileStudentID {
+    /* student id on right side as per req */
     text-align: right;
  }
-.ProfileInfo {
-    opacity: 0;
-    overflow: hidden;
-}
 .ProfileImage, .MiniProfileImage {
+    /* circular profile photos */
     margin: auto;
     width: fit-content;
     height: fit-content;
     clip-path: circle(45%);
 }
+
+/* table formatting */
+
 .ProfileFunFacts table {
     margin: auto;
     background-color: var(--asora-warm-sand);
+    width: 100%;
+    border-radius: 10px;
+}
+.ProfileFunFacts table th, td {
+    border-radius: 10px;
 }
 .ProfileFunFacts table tr:hover {
     background-color: var(--asora-white);
@@ -94,6 +113,7 @@ description: css for about.html, could be merged(?)
     background-color: var(--asora-white);
 }
 #GroupPhoto figure img {
+    /* group photo border as per req */
     border: 2px solid #000;
     border-radius: 5px;
     margin-top: 5em;
