@@ -100,7 +100,7 @@
     font-weight: 600;
     color: var(--asora-white);
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background-color 0.2s;
 }
 
 .apply_now_button a {

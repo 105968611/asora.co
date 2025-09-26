@@ -102,7 +102,7 @@ a {
   background-image: linear-gradient(0deg,  /*Background linear transition */
   rgba(0, 0, 0, 0.5), 
   rgba(0, 0, 0, 1)),
-  url(/src/images/background/bg2.png);
+  url(../../images/background/bg2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -306,20 +306,20 @@ a {
 .box-1 {
   --bg-image: 
   linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-  url(/src/images/background/bg8.png);
+  url(../../images/background/bg8.png);
 }
 
 .box-2 {
   --bg-image:
   linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-  url(/src/images/background/bg9.png);
+  url(../../images/background/bg9.png);
   --bg-position: left;
 }
 
 .box-3 {
   --bg-image: 
   linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url(/src/images/background/bg10.png);
+  url(../../images/background/bg10.png);
 }
 
 
@@ -335,7 +335,7 @@ a {
   background-color: black;
   margin-top: -5px;
 
-  background-image: url(/src/images/background/bg6.png);
+  background-image: url(../../images/background/bg6.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -400,7 +400,7 @@ a {
   background-color: black;
   padding: 2rem;
 
-  background-image: url(/src/images/background/bg5.png);
+  background-image: url(../../images/background/bg5.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
