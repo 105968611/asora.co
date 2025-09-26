@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply- Asora.Co</title>
+    <title>Apply</title>
     <link rel="shortcut icon" type="x-icon" href="images/logos/asora_logo_white_increasedsize.png">
     <!--Link to CSS-->
-    <link rel="stylesheet" href="./styles/apply-styles/global.css">
-    <link rel="stylesheet" href="./styles//apply-styles/layout.css">
 
-    <link rel="stylesheet" href="./styles//apply-styles/components.css">
-    <link rel="stylesheet" href="./styles//apply-styles/media-query.css">
-    <link rel="stylesheet" href="./styles//apply-styles/navigation.css">
+    <link rel="stylesheet" href="styles/asora-styles/layout.css">
+    <link rel="stylesheet" href="styles/asora-styles/navigation.css">
+    <link rel="stylesheet" href="styles/asora-styles/forms.css">
+    <link rel="stylesheet" href="styles/asora-styles/components.css">
+    <link rel="stylesheet" href="styles/asora-styles/responsive.css">
 
-    <link rel="stylesheet" href="styles/index-styles/index-general.css">
-    <link rel="stylesheet" href="styles/index-styles/index-medquery.css">
     <!--Required Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,20 +26,23 @@
     <header>
         <div class="navbar">
             <div class="logo_container">
-                <a href="index.html"><img src="./images/logos/asoratext_black.png" alt="asora_logo" class="wide_logo"></a>
-                <a href="index.html"><img src="./images/logos/asora_logo_black.png" alt="asora_logo_small"  class="short_logo"></a>
+                <a href="index.html"><img src="./images/logos/asoratext_black.png" alt="asora_logo"
+                        class="wide_logo"></a>
+                <a href="index.html"><img src="./images/logos/asora_logo_black.png" alt="asora_logo_small"
+                        class="short_logo"></a>
             </div>
 
 
             <input type="checkbox" id="sidebar_active">
             <label for="sidebar_active" class="open_sidebar_btn">
-                <img width="32" height="32" src="https://img.icons8.com/windows/32/1d2628/menu--v1.png" alt="menu--v1"/>
+                <img width="32" height="32" src="https://img.icons8.com/windows/32/1d2628/menu--v1.png"
+                    alt="menu--v1" />
             </label>
-            <div class="nav_links">              
+            <div class="nav_links">
 
-                    <label for="sidebar_active" class="close_sidebar_btn">
-                        <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/back.png" alt="back"/>
-                    </label>
+                <label for="sidebar_active" class="close_sidebar_btn">
+                    <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/back.png" alt="back" />
+                </label>
                 <a href="index.html">Home</a>
                 <a href="jobs.html">Careers</a>
                 <div class="dropdown">
@@ -49,10 +50,10 @@
                     <ul class="dropdown_menu">
                         <li class="dropdown_heading">Meet the team</li>
                         <li>
-                             <hr style="width: 80%;">
+                            <hr style="width: 80%;">
                         </li>
                         <li>
-                            <a href="about.html" class="team_member">
+                            <a href="about.html#hannah-card" class="team_member">
                                 <img class="member_icon" width="32" height="32"
                                     src="https://img.icons8.com/ios/50/businesswoman.png" alt="code" />
                                 <div class="member_info">
@@ -66,10 +67,9 @@
                         </li>
 
                         <li>
-                            <a href="about.html" class="team_member">
+                            <a href="about.html#isabela-card" class="team_member">
                                 <img class="member_icon" width="32" height="32"
-                                    src="https://img.icons8.com/ios/50/businesswoman.png"
-                                    alt="data-configuration" />
+                                    src="https://img.icons8.com/ios/50/businesswoman.png" alt="data-configuration" />
                                 <div class="member_info">
                                     <span class="member_name">Meet Isabela</span>
                                     <span class="role_member">Data Engineer</span>
@@ -81,7 +81,7 @@
                         </li>
 
                         <li>
-                            <a href="about.html" class="team_member">
+                            <a href="about.html#nathan-card" class="team_member">
                                 <img class="member_icon" width="32" height="32"
                                     src="https://img.icons8.com/windows/32/code.png" alt="code" />
                                 <div class="member_info">
@@ -95,7 +95,7 @@
                         </li>
 
                         <li>
-                            <a href="about.html" class="team_member">
+                            <a href="about.html#joseph-card" class="team_member">
                                 <img class="member_icon" width="32" height="32"
                                     src="https://img.icons8.com/windows/32/combo-chart.png" alt="combo-chart" />
                                 <div class="member_info">
@@ -121,7 +121,8 @@
         </div>
 
         <div class="page_title">
-            <h1 >Apply Now <img width="32" height="32" src="https://img.icons8.com/windows/32/expand-arrow--v1.png" alt="expand-arrow--v1"/> </h1>
+            <h1>Apply Now <img width="32" height="32" src="https://img.icons8.com/windows/32/expand-arrow--v1.png"
+                    alt="expand-arrow--v1" /> </h1>
         </div>
     </div>
 
@@ -139,24 +140,26 @@
                     <label for="role">Select the role you are applying for</label>
                     <select name="role" id="role" class="box_input" required>
                         <option value="">-- Choose your role --</option>
-                        <option value="role1">Data Analyst</option>
-                        <option value="role2">Data Engiener</option>
-                        <option value="role3">Business Analyst</option>
-                        <option value="role4">Full-Stack Software Engineer</option>
-                        <option value="role5">Solutions Architect</option>
-                        <option value="role6">Cloud & Infrastructure Manager</option>
-                        <option value="role7">Data Security Engineer</option>
-                        <option value="role8">Machine Learning Engineer</option>
-                        <option value="role9">Systems Architect</option>
-                        <option value="role10">Data Privacy Officer</option>
-                        <option value="role11">Graduate (Software Developer) EOI</option>
-                        <option value="role12">Data Architect</option>
-                        <option value="role13">Systems and Network Administrator</option>
-                        <option value="role14">Management Accountant</option>
-                        <option value="role15">DevOps Engineer</option>
-                        <option value="role16">UI/UX Designer Lead</option>
-                        <option value="role18">Cyber Security Operations Lead</option>
-                        <option value="role19">Security Consultant</option>
+                        <option value="da1a2">Data Analyst</option>
+                        <option value="sn9m3">Systems and Network Administrator</option>
+                        <option value="ml3k8">Machine Learning Engineer</option>
+                        <option value="ma5q1">Management Accountant</option>
+                        <option value="sc7d4">Security Consultant</option>
+                        <option value="do4v6">DevOps Engineer</option>
+                        <option value="ux2l9">UI/UX Designer Lead</option>
+                        <option value="cs805">Cyber Security Operations Lead</option>
+                        <option value="de3f7">Data Engineer</option>
+                        <option value="ba7k2">Business Analyst</option>
+                        <option value="fs4n8">Full-Stack Software Engineer</option>
+                        <option value="sa2h5">Solutions Architect</option>
+                        <option value="cim8br">Cloud & Infrastructure Manager</option>
+                        <option value="dse5p9">Data Security Engineer</option>
+                        <option value="sya9c3">Systems Architect</option>
+                        <option value="dpo3m6">Data Privacy Officer</option>
+                        <option value="fe5a1">Data Privacy Officer</option>
+                        <option value="gr1q9">Graduate (Software Developer) EOI</option>
+                        <option value="dar7v2">Data Architect</option>
+                        <option value="cso7b5">Cyber Security Operations Lead</option>
                     </select>
                 </div>
 
@@ -198,7 +201,7 @@
                         <legend for="gender" class="box_label">Gender <span class="req">*</span></legend>
                         <div class="box_input">
                             <input type="radio" name="gender" id="apl_female" value="Female" required
-                                title="Select your gender">
+                                title="Select one option">
                             <label for="apl_female">Female</label>
                             <input type="radio" name="gender" id="apl_male" value="Male">
                             <label for="apl_male">Male</label>
@@ -216,8 +219,9 @@
                 <!--Suburb Town-->
                 <div class="box_form">
                     <label for="apl_suburb" class="box_label">Suburb/Town <span class="req">*</span></label>
-                        <input type="text" id="apl_suburb" class="box_input" maxlength="40" requried placeholder="Enter your suburb name">
-                    
+                    <input type="text" id="apl_suburb" class="box_input" maxlength="40" requried
+                        placeholder="Enter your suburb name">
+
                 </div>
 
                 <!--State field-->
@@ -258,15 +262,15 @@
 
                 <!--Skill list field-->
                 <div class="box_form">
-                    <fieldset class="vertical_radio">
+                    <fieldset class="vertical_check">
                         <legend for="apl_skill" class="box_label">Skill list<span class="req">*</span></legend>
-                        <label for="skill1"><input type="checkbox" name="skill" id="skill1" value="Data1" required>Data
+                        <label for="skill1"><input type="checkbox" name="skill" id="skill1" value="skill1" required>Data
                             Quality Principles</label>
-                        <label for="skill2"><input type="checkbox" name="skill" id="skill2" value="Data2">Data privacy
+                        <label for="skill2"><input type="checkbox" name="skill" id="skill2" value="skill2">Data privacy
                             laws & compliance</label>
                         <label for="skill3"><input type="checkbox" name="skill" id="skill3"
-                                value="Data3">Problem-Solving & Critical Thinking</label>
-                        <label for="skill4"><input type="checkbox" name="skill" id="skill4" value="Data4">Leadership &
+                                value="skill3">Problem-Solving & Critical Thinking</label>
+                        <label for="skill4"><input type="checkbox" name="skill" id="skill4" value="skill4">Leadership &
                             Management</label>
                     </fieldset>
                 </div>
@@ -321,73 +325,75 @@
     </div>
 
     <!--Footer Creds/Made by Hannah-->
-		<footer>
-			<div class="footer-row">
-				<div class="footer-column">
-					<a href="index.html"><img class="logo-footer" src="images/logos/asoratext_black.png" alt="asora-logo"></a>
-					<div class="separator"></div>
-					<h4>Email</h4>
-					<a class="email-id" href="mailto:info@asoraco.com.au">info@asoraco.com.au</a>
-					<h4>Phone</h4>
-					<p>1300 000 000</p>			
-				</div>
+    <footer>
+        <div class="footer-row">
+            <div class="footer-column">
+                <a href="index.html"><img class="logo-footer" src="images/logos/asoratext_black.png"
+                        alt="asora-logo"></a>
+                <div class="separator"></div>
+                <h4>Email</h4>
+                <a class="email-id" href="mailto:info@asoraco.com.au">info@asoraco.com.au</a>
+                <h4>Phone</h4>
+                <p>1300 000 000</p>
+            </div>
 
-				<div class="footer-column">
-					<h3>Menu</h3>
-					<div class="separator"></div>
-					<ul class="menu-list">
-						<li><a class="listing" href="index.html">Home</a></li>
-						<li><a class="listing" href="jobs.html">Careers</a></li>
-						<li><a class="listing" href="about.html">Our Team</a></li>
-					</ul>
-				</div>
+            <div class="footer-column">
+                <h3>Menu</h3>
+                <div class="separator"></div>
+                <ul class="menu-list">
+                    <li><a class="listing" href="index.html">Home</a></li>
+                    <li><a class="listing" href="jobs.html">Careers</a></li>
+                    <li><a class="listing" href="about.html">Our Team</a></li>
+                </ul>
+            </div>
 
-				<div class="footer-column">
-					<h3>Newsletter</h3>
-					<div class="separator"></div>
-					<p class="info-newsletter"> Subscribe to our newsletter for upcoming events!</p>
-					<form class="newsletter-userinput">
-						<img class="email-icon" src="images/icons/email-icon.png" alt="email-icon">
-						<input class="email-textbox" type="text" placeholder="Enter your Email">
-						<div class="social-icons">
-							<img class="submit-button" src="images/icons/submit-icon.svg" alt="submit">
-							<div class="tooltip">Submit</div>
-						</div>
-					</form>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <div class="separator"></div>
+                <p class="info-newsletter"> Subscribe to our newsletter for upcoming events!</p>
+                <form class="newsletter-userinput">
+                    <img class="email-icon" src="images/icons/email-icon.png" alt="email-icon">
+                    <input class="email-textbox" type="text" placeholder="Enter your Email">
+                    <div class="social-icons">
+                        <img class="submit-button" src="images/icons/submit-icon.svg" alt="submit">
+                        <div class="tooltip">Submit</div>
+                    </div>
+                </form>
 
-					<h3>Our Socials</h3>
-					<div class="separator"></div>
-					<form class="social-media">
-						<div class="social-icons">
-							<a class="github-icon" href="https://github.com/105968611/asora.co">
-                                <img src="images/icons/github-mark.svg" alt="GitHub">
-                            </a>
-							<div class="tooltip">GitHub</div>
-						</div>
-						<div class="social-icons">
-							<a class="jira-icon" href="https://isagav2312.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiZDIxMjdlMTYwYTA1NDUyOTg2MGVmMTI3YzAzODZiOTEiLCJwIjoiaiJ9">
-                                <img src="images/icons/jira-logo.png" alt="Jira-Management-Logo">
-                            </a>
-						<div class="tooltip">Jira Management</div>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<hr>
-			<!--Copyright Section-->
-			<div class="copyright-section">
-				<div class="left-content">
-				<img class="gov-logo" src="images/icons/aus-gov-logo.png" alt="aus-gov-logo">
-				<p class="right-reserve-text">&copy; 2025 Asora.Co All Rights Reserved.</p>
-				</div>
-				<div class="pp-tos-inclusion">
-					<a href="#" class="hover:text-white transition duration-300">Privacy Policy</a> |
-          <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <h3>Our Socials</h3>
+                <div class="separator"></div>
+                <form class="social-media">
+                    <div class="social-icons">
+                        <a class="github-icon" href="https://github.com/105968611/asora.co">
+                            <img src="images/icons/github-mark.svg" alt="GitHub">
+                        </a>
+                        <div class="tooltip">GitHub</div>
+                    </div>
+                    <div class="social-icons">
+                        <a class="jira-icon"
+                            href="https://isagav2312.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiZDIxMjdlMTYwYTA1NDUyOTg2MGVmMTI3YzAzODZiOTEiLCJwIjoiaiJ9">
+                            <img src="images/icons/jira-logo.png" alt="Jira-Management-Logo">
+                        </a>
+                        <div class="tooltip">Jira Management</div>
+                    </div>
+                </form>
+            </div>
         </div>
-			</div>
 
-		</footer>
+        <hr>
+        <!--Copyright Section-->
+        <div class="copyright-section">
+            <div class="left-content">
+                <img class="gov-logo" src="images/icons/aus-gov-logo.png" alt="aus-gov-logo">
+                <p class="right-reserve-text">&copy; 2025 Asora.Co All Rights Reserved.</p>
+            </div>
+            <div class="pp-tos-inclusion">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a> |
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
