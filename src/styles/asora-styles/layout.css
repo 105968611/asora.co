@@ -335,7 +335,7 @@ a {
   background-color: black;
   margin-top: -5px;
 
-  background-image: url(../../images/background/bg6.png);
+  background-image: url('../../images/background/bg6.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
